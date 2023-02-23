@@ -1,0 +1,16 @@
+algoritmo "Exercício 6 - Sucessor antecessor"
+//Proposta: Faça um programa que leia um número inteiro e mostre o seu antecessor e seu sucessor.
+// Autora: Franciele
+//Prof: Gustavo Guanabara.
+var
+N, NA, NS:  inteiro
+inicio
+
+Escreva("Digite um número:")
+leia (N)
+NA <- N - 1
+NS <- N + 1
+EscrevaL ("O Antecessor de ", N , " é " ,NA)
+EscrevaL ("O Sucessor de", N , " é ", NS )
+
+fimalgoritmo
