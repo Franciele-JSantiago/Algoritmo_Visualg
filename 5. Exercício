@@ -1,0 +1,16 @@
+algoritmo "5 EXERCÍCIO "
+//Proposta: Faça um programa que leia as duas notas de um aluno, e mostre a média.
+//Autora: Franciele
+//Prof: Gustavo Guanabara
+var
+N1 , N2, M : REAL
+
+inicio
+Escreva ("Digite a primeira nota: ")
+leia (N1)
+Escreva ("Digite a segunda nota: ")
+leia (N2)
+M <- (N1 + N2) / 2
+Escreva (" A média entre as notas ", N1, " e ", N2, " é " , M)
+
+fimalgoritmo
