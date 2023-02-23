@@ -1,0 +1,15 @@
+algoritmo "Meu nome"
+//Proposta: Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas vindas.
+//Autora: Franciele
+//Resolução do  2º exercício - Algoritmo - Prof: Gustavo Guanabara.
+var
+Nome: Caractere
+
+inicio
+Escreva ("Qual é o seu nome? ")
+Leia (nome)
+Escreva (" Olá! " , Nome, " é um prazer te conhecer!")
+
+
+
+fimalgoritmo
