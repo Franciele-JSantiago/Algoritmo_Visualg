@@ -7,7 +7,7 @@ Nome: Caractere
 
 inicio
 Escreva ("Qual é o seu nome? ")
-Leia (nome)
+leia (nome)
 Escreva (" Olá! " , Nome, " é um prazer te conhecer!")
 
 
