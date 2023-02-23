@@ -1,0 +1,16 @@
+algoritmo "Exercício 4 - Soma"
+// Proposta: Desenvolva um algoritmo que leia dois números inteiros e mostre o somatório entre eles.
+//Autora: Franciele
+//Resolução do 4º exercício - Algoritmo - Prof: Gustavo Guanabara.
+
+var
+   V1, V2, S: Inteiro
+inicio
+Escreva("Digite um valor:")
+Leia (V1)
+Escreva("Digite outro valor:")
+Leia (V2)
+S <- V1 + V2
+Escreva ("A soma entre", V1, " e ", V2, " é igual a", S)
+
+fimalgoritmo
