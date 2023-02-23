@@ -4,7 +4,7 @@ algoritmo "Exercício 4 - Soma"
 //Resolução do 4º exercício - Algoritmo - Prof: Gustavo Guanabara.
 
 var
-   V1, V2, S: Inteiro
+   V1, V2, S: inteiro
 inicio
 Escreva("Digite um valor:")
 Leia (V1)
