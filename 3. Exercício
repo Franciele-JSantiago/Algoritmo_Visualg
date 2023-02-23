@@ -8,9 +8,9 @@ Valor: Inteiro
 
 inicio
 Escreval ("Digite o nome do funcionário:")
-Leia (Nome)
+leia (Nome)
 Escreval ("Digite o valor do salário:")
-Leia (Valor)
+leia (Valor)
 Escreva ("O funciário ", Nome, " recebeu um salário de: R$",valor, " em Junho.")
 
 
