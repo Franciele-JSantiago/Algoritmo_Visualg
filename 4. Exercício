@@ -1,0 +1,17 @@
+algoritmo "Nome, Salário"
+// Proposta: Crie um programa que leia o nome e o salário de um funcionário, mostrando no final uma mensagem.
+// Autora: Franciele
+//Resolução do 3º exercício - Algoritmo - Prof: Gustavo Guanabara.
+var
+Nome: Caractere
+Valor: Inteiro
+
+inicio
+Escreval ("Digite o nome do funcionário:")
+Leia (Nome)
+Escreval ("Digite o valor do salário:")
+Leia (Valor)
+Escreva ("O funciário ", Nome, " recebeu um salário de: R$",valor, " em Junho.")
+
+
+fimalgoritmo
