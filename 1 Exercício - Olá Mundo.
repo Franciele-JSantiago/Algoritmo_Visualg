@@ -1,9 +1,7 @@
 algoritmo "Olá Mundo!"
-
 //Proposta: Escreva um programa que mostre na tela "Olá, Mundo!"
 //Autora: Franciele
 //Resolução do 1° exercicio - Algoritmo - Prof: Gustavo Guanabara.
-
 var
     msg: caractere
 Início
