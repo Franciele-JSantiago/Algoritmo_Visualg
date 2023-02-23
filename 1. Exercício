@@ -1,0 +1,11 @@
+algoritmo "Olá Mundo!"
+//Proposta: Escreva um programa que mostre na tela "Olá, Mundo!"
+//Autora: Franciele
+//Resolução do 1° exercicio - Algoritmo - Prof: Gustavo Guanabara.
+var
+    msg: caractere
+inicio
+  msg <- "olá, mundo"
+ escreval("Mensagem: " , msg)
+ escreval("Me livrei da maldição!")
+fimalgoritmo
