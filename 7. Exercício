@@ -1,0 +1,17 @@
+algoritmo  "Exercício 7"
+//Proposta:Criar um algoritmo que leia o número real e mostre na tela o seu dobro e a sua terça parte
+//Autora: Franciele J. sANTIAGO
+//Prof: Gustavo Guanabara
+var
+N, D, T: REAL
+
+inicio
+Escreva ("Digite um número:")
+leia (N)
+D <- (N *2)
+T <- (N /3)
+Escreval ("O dobro de", N, " é " ,D)
+Escreval ("A terça parde de", N, " é " ,T)
+
+
+fimalgoritmo
