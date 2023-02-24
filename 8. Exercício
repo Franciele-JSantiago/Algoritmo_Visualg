@@ -1,0 +1,34 @@
+algoritmo "Exercício 8"
+//Proposta: Desenvolva um programa que leia uma distância em metros e mostre os valores relativos em outras medidas.
+//Autora:Franciele J. Santiago
+//Prof: Gustavo Guanabara
+var
+Mt, km, Hm,DaM, Cm, Mm : Real
+inicio
+Escreva ("Digite uma distância em metros:")
+leia (Mt)
+Km <- (Mt / 1000)
+Hm <- (Mt / 100)
+DaM <- (Mt / 10)
+Dm <- (Mt * 10)
+Cm <- (Mt * 100)
+Mm <- (Mt * 1000)
+
+Escreval ("A distância de", Mt, " m, Corresponde a:")
+Escreval (Km, " Km")
+Escreval (Hm, " Hm")
+Escreval (DaM, " Dam")
+Escreval (Dm, " Dm")
+Escreval (Cm, " Cm")
+Escreval (Mm, " Mm")
+
+
+fimalgoritmo
+
+//Mt - MetrO
+//Km - Kilômetro - 1 metro x 1.000
+//Hm - Hectômetro - 1 hectômetro equivale a 100 metros, isso é, 1 metro x 100 = 1 hm
+//DaM - Decâmetro - 1 decâmetro equivale a 10 metros, ou seja, 1 metro x 10 = 1 daM
+//Dm - Decímetro -  1 decímetro equivale a divisão do metro em 10 partes, ou seja, 1 metro / 10 = 1dm
+//Cm - Centímetro - 1 centímetro equivale a divisão do metro em 100 partes, ou seja, 1 metro = 1cm
+//Mm - Milímetro - 1 milímetro equivale a divisão do metro em 1.000 partes, ou seja 1 metro / 1.000 = 1mm
