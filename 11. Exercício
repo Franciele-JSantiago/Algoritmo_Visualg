@@ -1,0 +1,21 @@
+algoritmo "11 Exercicio valor delta"
+//Desenvolva uma lógica que leia os valores de A B C de uma Equação de segundo grau e mostre o valor de delta
+//Delta = b² - 4.a.c
+//Autora: Franciele J. Santiago.
+//Prof: Gustavo Guanabara.
+var
+T: Caractere
+A, B, C, D : Real
+
+inicio
+Escreval("Em uma Equação do segundo guau, qual será o valor de Delta? Vamos descobrir?")
+Escreva ("Digite o valor de A:")
+leia (A)
+Escreva ("Digite o valor de B:")
+leia (B)
+Escreva ("Digite o valor de C:")
+leia (C)
+D <- (B*B)-(4*A*C)
+Escreval ("O valor de Delta é", D)
+
+fimalgoritmo
