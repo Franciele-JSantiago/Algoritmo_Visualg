@@ -1,0 +1,19 @@
+algoritmo "Exercício 9 - Conversor moedas"
+//Proposta:Faça um algoritmo que leia quanto a pessoa tem de dinheiro na carteira em Reais e mostre quantos dólares ela pode comprar.
+//Considere US$1.00 = R$ 3,45.
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+var
+Valor, Dolar : Real
+
+inicio
+Escreval ("-----------------------------------------------")
+Escreval("---Sistema de conversão Real para Dólar---")
+Escreval("------------------------------------------------")
+Escreva("Digite o valor que você gostaria de converter:")
+leia (Valor)
+Dolar <- Valor / 3.45
+Escreval("Você consegue comprar com ", Valor:5:2, " Reais a quantia de:",Dolar:5:2, " Dólares")
+
+
+fimalgoritmo
