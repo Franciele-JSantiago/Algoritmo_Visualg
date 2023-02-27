@@ -1,0 +1,30 @@
+algoritmo "Exercicio 14  "
+//Proposta:Escreva um algoritmo que pergunte a quantidade de Km percorridos por um carro alugado.
+//E a quantidade de dias pelos quais ele foi alugado.
+//Calcule o preço total a pagar.
+//Sabendo que a diária é R$90,00
+//e o kilometro rodado é R$0,20
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+//Data: 27/02/2023 - Modificado
+var
+  Texto: Caractere
+  km, Dias, CustoDia,Aluguel, KmRodado : Real
+inicio
+Escreval("----------------------------------------------------")
+Escreval("----FranDevcoderSystem - Locadora de Automóveis")
+Escreval("----------------------------------------------------")
+Escreval("Olá, para podermos calcular o valor á ser pago pelo aluguel do carro,favor inserir as seguintes informações")
+Escreval("-----------------------------------------------------")
+Escreva("Digite a quantidade de kilometros percorridos pelo veículo; ")
+leia (km)
+Escreva("Digite a quantidade de dias pelos quais o carro foi alugado: ")
+leia (Dias)
+KmRodado <- km * 0.20
+CustoDia<- Dias * 90.00
+Aluguel<- KmRodado + CustoDia
+Escreval ("O valor a se pago em kilometragem é R$", KmRodado:6:2)
+Escreval ("O valor a ser pago em diárias é R$", CustoDia:7:2)
+Escreval ("O valor total a ser pago pelo Aluguel é R$", Aluguel:7:2)
+
+fimalgoritmo
