@@ -9,8 +9,7 @@ Valor,VPromo, Desc :Real
 inicio
 Escreva ("Digite o valor do produto para gerar o desconto:")
 leia (Valor)
-VPromo <- 5*Valor/100
-Desc <- Valor-VPromo
+Desc <- Valor-((Valor*5)/100)
 Escreva ("O valor do produto com desconto de 5% fica:R$",Desc)
 
 fimalgoritmo
