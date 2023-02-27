@@ -1,0 +1,16 @@
+algoritmo "Exercício 12 "
+//Proposta:Crie um programa que leia um preço de um produto
+//Calcule e mostre seu preço promocional, com 5% de desconto
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara.
+var
+Valor,VPromo, Desc :Real
+
+inicio
+Escreva ("Digite o valor do produto para gerar o desconto:")
+leia (Valor)
+VPromo <- 5*Valor/100
+Desc <- Valor-VPromo
+Escreva ("O valor do produto com desconto de 5% fica:R$",Desc)
+
+fimalgoritmo
