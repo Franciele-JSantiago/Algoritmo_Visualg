@@ -1,0 +1,27 @@
+algoritmo "Exercício 16 Desafio"
+//Proposta:Calcular a redução do tempo de vida de um fumante.
+//Pergunte a quantidade de cigarros fumados por dia
+//E quantos anos ele já fumou
+//Considere que um fumante perde 10 minutos de vida a cada cigarro.
+//Calcule quantos dias de vida o fumante perderá.
+var
+Texto : Caractere
+QuantCigar,QuantAnos,TempoFumando, DiasPerdidos: Real
+
+   
+inicio
+Escreval("--------------------------------------------------------")
+Escreval("---------------FranDevCoderSystem Alerta---------------")
+Escreval("--------------Fumar é prejudicial a saúde---------------")
+Escreval("---------------------------------------------------------")
+Escreval ("Cálculo da redução de tempo de vida de um fumante.")
+Escreva("Digite a quantidade de cigarros fumados por dia:")
+leia (QuantCigar)
+Escreva ("Digite a quantos anos você fuma:")
+leia (QuantAnos)
+TempoFumando <- QuantCigar * 10 *365 *QuantAnos
+DiasPerdidos <- TempoFumando /60 / 24
+
+Escreval("Você perderá", DiasPerdidos:4, " dias da sua vida")
+
+fimalgoritmo
