@@ -1,0 +1,25 @@
+algoritmo "Exercicio 13"
+
+//Proposta:Faça um algoritmo que leia o salário de uma pessoa
+//Calcule e mostre seu novo salário com aumento de 15%
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara.
+var
+Nome: Caractere
+Valor, Porcentagem, Salario :Real
+
+inicio
+Escreval("------------------------------------------------")
+Escreval("-------------FranDevcoder System-------------")
+Escreval("------------------------------------------------")
+Escreva("Digite o Nome do Funcionário: ")
+leia(Nome)
+Escreva ("Digite o valor do salário do funcionário: ")
+leia (Valor)
+Escreva ("Digite o percentual á ser acrescido: ")
+leia (Porcentagem)
+Salario <- Valor + ( (Porcentagem*Valor) /100)
+Escreva("O salário do funcinário(a) ", Nome, " Com ", Porcentagem, " % de acréscimo ficará em R$ ", Salario:5:2)
+
+
+fimalgoritmo
