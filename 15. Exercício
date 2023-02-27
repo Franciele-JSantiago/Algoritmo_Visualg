@@ -1,0 +1,27 @@
+algoritmo "Exercicio 15 horas trabalhadas"
+//Proposta:Crie um programa que leia os dias trabalhados em um mês.
+//E mostre o salário de um funcionário.
+//Sabendo que ele trabalha 8 horas por dia.
+//E ganha R$ 25,00 por hora trabalhada
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara.
+//Data: 27/02/20023 - Alterado.
+var
+Nome, Data: Caractere
+Dias,ValorHora : Real
+
+inicio
+Escreval("--------------------------------------------------------")
+Escreval(" ---------FranDevCoderSystem Folha de Pagamento--------")
+Escreval("--------------------------------------------------------")
+Escreva("Digite o Nome do Funcionário(a): ")
+leia (Nome)
+Escreva("Digite a data do pagamento: ")
+leia (Data)
+Escreva ("Digite os dias trabalhados: ")
+leia (Dias)
+ValorHora <- Dias*8*25
+Escreval("O salário do funcionário(a) " , Nome, " a ser pago em " , Data,  " é de R$",ValorHora:5:2)
+
+
+fimalgoritmo
