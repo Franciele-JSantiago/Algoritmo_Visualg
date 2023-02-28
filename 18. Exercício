@@ -1,0 +1,31 @@
+algoritmo "Exercício 18 VOTAÇÃO"
+//Proposta:Leia o nascimento de uma pessoa
+//decida se ela pode ou não votar
+//Idade permitida para votar é 16 anos
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+//Data: 28/02/2023 - Modificado
+var
+   Nome: Caractere
+    Nascimento, Dif :Real
+inicio
+      Escreval("------------------------------------")
+      Escreval("   Sistema Eleitoral Brasileiro     ")
+      Escreval("------------------------------------")
+      Escreva ("Digite seu Nome: ")
+      leia (Nome)
+      Escreva("Digite seu ano de nascimento: ")
+      leia(Nascimento)
+      Escreval("------------------------------------")
+      Dif <- 2022 - (Nascimento)
+
+      Se Dif < 16 entao
+         Escreval(Nome, " você não atingiu a idade permitida para votar")
+         senão
+              Escreval(Nome, " você tem mais de 16 anos e já pode votar!")
+
+      FimSe
+
+      Escreval("------------------------------------")
+
+fimalgoritmo
