@@ -1,0 +1,32 @@
+algoritmo "Exercício 17 multa"
+//Proposta:Escreva um programa que pergunte a velocidade de um carro
+//Caso ultrapasse 80Km/h, exiba uma mensagem de multa
+//Nesse caso cobre o valor da multa
+//sendo que custa R$ 5,00 o Km acima da velocidade permitida
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+//Data: 28/02/2023 - Modificado
+var
+    velocidade, Dif, Multa: Real
+inicio
+      Escreval ("----------------------------------------")
+      Escreval("           SISTEMA DE TRÂNSITO           ")
+      Escreval ("----------------------------------------")
+      Escreva("Qual foi sua velocidade máxima?")
+      leia(Velocidade)
+      Dif <- (velocidade - 80)
+      Multa <- Dif * 5
+      Se velocidade >80 entao
+           Escreval("Você ultrapassou o limite de 80Km/h")
+           Escreval ("Você acaba de ser multado!!")
+           Escreval ("----------------------------------------")
+           Escreval("Você ultrapassou o limite em:", Dif, "Km/h")
+           Escreval("Sua multa é de R$ ", Multa:3:2)
+       senao
+            Escreval("Muito bem, você permaneceu na velocidade permitida!")
+            Escreval("Não há multas para essa você!")
+
+      FimSe
+
+
+fimalgoritmo
