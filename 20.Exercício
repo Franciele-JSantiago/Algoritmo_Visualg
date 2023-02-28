@@ -1,0 +1,23 @@
+algoritmo "Exercício 20 PAR OU IMPAR"
+//Proposta:Ler um número inteiro
+//mostrar se ele é par ou impar
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+//Data: 28/02/2023 - Modificado
+
+var
+   N: inteiro
+
+inicio
+Escreval("-------------------------------------------")
+Escreval("---Descubra se o número é Par ou Impar-----")
+Escreval("-------------------------------------------")
+   Escreva("Digite um número: ")
+   leia (N)
+   Se (N %2=0)entao
+      Escreval("o Número",N, " é par")
+   senao
+      Escreval("o Número",N, " é impar")
+   FimSe
+
+fimalgoritmo
