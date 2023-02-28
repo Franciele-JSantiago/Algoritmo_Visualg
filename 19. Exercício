@@ -1,0 +1,37 @@
+algoritmo "Exercício 19 APROVEITAMENTO"
+//Proposta:Ler o nome e duas notas de um aluno
+//Calcular a média e mostrar
+//Mostrar o aproveitamento
+//média 7.0
+//Autora: Franciele j. Santiago
+//Prof: Gustavo Guanabara
+//Sata: 28/02/2023 - Modificado
+
+var
+Nome: Caractere
+Nota1, Nota2,Media, Ap: Real
+
+inicio
+      Escreval("----------------------------")
+      Escreval("    Escola Fran Devcoder"    )
+      Escreval("----------------------------")
+      Escreval(" Cálculo de Aproveitamento")
+      Escreval("----------------------------")
+      Escreva("Digite o Nome do Aluno: ")
+      leia (Nome)
+      Escreva("Digite a primeira nota: ")
+      leia (nota1)
+      Escreva("Digite a segunda nota: ")
+      leia (nota2)
+      Media <- (nota1 + nota2)/2
+      Escreval(Nome, " sua média é :", media)
+      escolha  Media
+      caso 9
+           Escreval("Seu aproveitamento ficou acima da média, EXCELENTE!")
+      caso 7,8
+           Escreval("Seu aproveitamento ficou na média, PARABÉNS!")
+      outrocaso
+               Escreval("Você não atingiu a média, ESTUDE MAIS!")
+      Fimescolha
+
+fimalgoritmo
