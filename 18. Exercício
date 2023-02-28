@@ -17,7 +17,7 @@ inicio
       Escreva("Digite seu ano de nascimento: ")
       leia(Nascimento)
       Escreval("------------------------------------")
-      Dif <- 2022 - (Nascimento)
+      Dif <- 2022 -  (nascimento)
 
       Se Dif < 16 entao
          Escreval(Nome, " você não atingiu a idade permitida para votar")
