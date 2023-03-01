@@ -1,0 +1,42 @@
+algoritmo "24. Exercício"
+//Proposta: Pergunte a distância que um passageiro deseja percorrem em Km.
+//Calcule o preço da passagem:
+//Cobre R$ 0,50 por Km até 200Km
+//Cobre R$ 0,45 por Km quando passar de 200Km
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+//Data: 01/03/2023
+
+var
+   Nome: Caractere
+   Distancia,Cobranca:Real
+
+inicio
+   Escreval("---------------------------------------------------")
+   Escreval("       Empresa Rodoviária Viage com o Dev          ")
+   Escreval("---------------------------------------------------")
+   Escreval("Saiba quanto você vai pagar pela sua viagem, agora!")
+   Escreval("---------------------------------------------------")
+   Escreva("Digite seu Nome Por Favor:")
+   leia (Nome)
+   Escreval("---------------------------------------------------")
+   Escreva(" Agora " , Nome , " Digite a distância em Km: ")
+   leia(Distancia)
+   Escreval("---------------------------------------------------")
+   Se  (Distancia<=200)entao
+      Cobranca <- (Distancia*0.50)
+      Escreval (Nome," ,O valor da sua passagem será de:", Cobranca:6:2)
+      Escreval("---------------------------------------------")
+      Escreval("   Obrigado por viajar conosco, boa viagem!  ")
+      Escreval("---------------------------------------------")
+   Senao (Distancia > 200)entao
+      Cobranca <- (Distancia*0.45)
+      Escreval (Nome, " ,O valor da sua passagem será de :", cobranca:6:2)
+      Escreval("---------------------------------------------")
+      Escreval("   Obrigado por viajar conosco, boa viagem!  ")
+      Escreval("---------------------------------------------")
+   FimSe
+
+
+
+fimalgoritmo
