@@ -1,0 +1,46 @@
+algoritmo "Exercício 23 promoção"
+//Proposta:Leia Nome, sexo,e valor das compras
+//homem ganha 5% de desconto
+//Mulher ganha 13%
+//Autora: Franciele j. Santiago
+//Prof: Gustavo Guanabara
+//Data: 01/03/2023
+
+var
+   Nome: Caractere
+   Compras, Homem, Mulher: Real
+   Sexo: Inteiro
+
+inicio
+   Escreval("------------------------------------------------")
+   Escreval("            Loja Mais Barato Dev                ")
+   Escreval("       08 de Março é o dia da Mulher            ")
+   Escreval("        Aproveite nossas promoções!             ")
+   Escreval("         Quem é Homem também leva!!             ")
+   Escreval("------------------------------------------------")
+
+   Escreva("Qual é o seu Nome? ")
+   leia (Nome)
+   Escreval("------------------------------------------------")
+   Escreval(Nome , " ,Qual seu sexo? ")
+   Escreval("------------------------------------------------")
+   Escreval("Digite:")
+   Escreval("[1]Masculino:")
+   Escreval("[2]Feminino:")
+   leia (Sexo)
+   Escreval("-----------------------------------------------")
+   Escreval("        Qual o  valor de suas compras?          ")
+   leia (Compras)
+   Escreval("-----------------------------------------------")
+   Escolha Sexo
+   Caso 1
+      Homem <- (compras)+(Compras*5/100)
+      Escreval("Você ganhou 5% de desconto, pague: ", Homem:6:2)
+   Caso 2
+      Mulher <- (compras)+(Compras*13/100)
+      Escreval("Você ganhou 13% de desconto, pague: ", Mulher:6:2)
+   Fimescolha
+
+
+
+fimalgoritmo
