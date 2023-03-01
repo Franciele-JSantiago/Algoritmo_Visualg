@@ -1,0 +1,33 @@
+algoritmo "Exercício 22 Alistamento militar"
+// Proposta:Faça um algoritmo que peça a idade da pessoa e calcule
+//Antes dos 18...mostre quanto tempo falta
+//Depois dos 18...mostre quanto tempo já passou do alistamento
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+//Data: 01/03/2023 - Modificado
+
+var
+   Ano_Nasc, Ano_Atual ,Alistamento,Dif: Inteiro
+
+inicio
+      Escreval("--------------------------------------------------")
+      Escreval("         Controle Alistamento Militar             ")
+      Escreval("--------------------------------------------------")
+      Escreva("Digite seu ano de nascimento: ")
+      leia(Ano_Nasc)
+      Escreva("Digite o ano de atual: ")
+      leia(Ano_Atual)
+      Alistamento <- (Ano_Atual - Ano_Nasc)
+      se Alistamento =18 entao
+         Escreval("Você está na idade de se alistar")
+       senao
+       Se Alistamento >18 entao
+       Dif <- (Alistamento - 18)
+         Escreval("Já passou ", Dif," anos da idade de se alistar")
+       senao
+       Dif<- abs(Alistamento-18)
+          Escreval("Você ainda é muito novo, faltam ", Dif, " anos para o alistamento")
+       fimse
+      fimse
+
+fimalgoritmo
