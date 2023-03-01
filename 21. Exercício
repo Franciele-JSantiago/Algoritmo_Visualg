@@ -1,0 +1,24 @@
+algoritmo "Exercício 21 ANO BISSEXTO"
+//Proposta:Faca um algoritmo que leia o ano e diga se ele é bissexto
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+//Data: 01/03/2023 - Modificado
+
+var
+   Ano, Resposta: Inteiro
+
+inicio
+Escreval("-------------------------------------------------")
+Escreval("        CALCULADORA PARA ANO BISSEXTO.           ")
+Escreval("-------------------------------------------------")
+
+      Escreva("Digite o ano que quer verificar: ")
+      leia (ano)
+      Se (ano % 4=0) entao
+         Escreval("O ano digitado É BISSEXTO!")
+      Senao
+           Escreval("O ano digitado NÃO É BISSEXTO!")
+      FimSe
+
+
+fimalgoritmo
