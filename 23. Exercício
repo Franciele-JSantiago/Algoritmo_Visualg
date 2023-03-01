@@ -34,10 +34,10 @@ inicio
    Escreval("-----------------------------------------------")
    Escolha Sexo
    Caso 1
-      Homem <- (compras)+(Compras*5/100)
+      Homem <- abs((Compras*5/100)-(compras))
       Escreval("Você ganhou 5% de desconto, pague: ", Homem:6:2)
    Caso 2
-      Mulher <- (compras)+(Compras*13/100)
+      Mulher <- abs((Compras*13/100)-(compras))
       Escreval("Você ganhou 13% de desconto, pague: ", Mulher:6:2)
    Fimescolha
 
