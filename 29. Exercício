@@ -1,0 +1,47 @@
+algoritmo "29. Exercício"
+//
+//
+//Proposta: Desenvolva um programa que leia o nome do funcionário,salário e tempo de serviço.
+//Calcule seu novo salário de acordo com a tabela abaixo
+//Até 3 anos de empresa: aumento de 3%
+//De 3 a 10 anos de empresa: aumento de 12.5%
+//Mais de 10 anos de empresa: aumento de 20%
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+//Data:02/03/2023
+
+var
+   Nome :Caractere
+   TemP , Salario, Aumenro: Real
+
+inicio
+   Escreval("----------------------------------------------------------")
+   Escreval("                Sistema de Cálculo Salarial               ")
+   Escreval("----------------------------------------------------------")
+   Escreva("Digite o nome do Funcionário: ")
+   leia (Nome)
+   Escreva("Digite o valor do salário de ", Nome, ":")
+   leia(Salario)
+   Escreva("Digite o tempo em que " , Nome , " trabalha na empresa: ")
+   leia(Temp)
+   Escreval("----------------------------------------------------------")
+   Se (Temp<=3) Entao
+      Aumento<- (salario) +(Salario*3/100)
+      Escreval ("Com " ,Temp, " anos de trabalho na empresa, o funcionário " ,Nome, " vai receber 3% de aumento e seu salário ficará em R$ " , Aumento:8:2)
+      Escreval("----------------------------------------------------------")
+   Senao
+      Se(Temp>3) e (Temp<=10) Entao
+         Aumento<- (salario) +(Salario*12.5/100)
+         Escreval ("Com " ,Temp, " anos de trabalho na empresa, o funcionário " ,Nome, " vai receber 12.5% de aumento e seu salário ficará em R$ " , Aumento:8:2)
+         Escreval("----------------------------------------------------------")
+      Senao
+         Se(Temp>10) Entao
+            Aumento<- (salario) +(Salario*20/100)
+            Escreval ("Com " ,Temp, " anos de trabalho na empresa, o funcionário " ,Nome, " vai receber 20% de aumento e seu salário ficará em R$ " , Aumento:8:2)
+            Escreval("----------------------------------------------------------")
+         FimSe
+      FimSe
+   FimSe
+
+
+fimalgoritmo
