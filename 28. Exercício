@@ -1,0 +1,50 @@
+algoritmo "28. Exercício"
+//
+//
+//Proposta: Faça um programa que leia as medidas de um terreno e mostre sua medida em m²
+//mostre a classificação deo terreno conforme classificação abaixo:
+//Abaixo de 100m²  = terreno popular
+//Entre 100m² e 500m² = Terreno Master
+//Acima de 500m² = Terreno vip
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+//Data: 02/03/2023
+var
+   Largura, Comprimento, Area:Real
+
+inicio
+   Escreval("--------------------------------------------")
+   Escreval("           Imobiliária DevCoder             ")
+   Escreval("             SEJA BEM VINDO!                ")
+   Escreval("--------------------------------------------")
+   Escreval ("Vamos analizar o terreno que você deseja comprar.")
+   Escreval("Está pronto? Vamos lá")
+   Escreva("Digite a largura do terreno escolhido:")
+   leia(Largura)
+   Escreva("Digite o comprimento do terreno escolhido:")
+   leia(Comprimento)
+   Area <- (largura*Comprimento)
+   Escreval("---------------------------------------------")
+   Se Area<=100 Entao
+      Escreval("Seu terreno tem ",Area, "m²")
+      Escreval("Abaixo de 100m²= :TERRENO POPULAR")
+       Escreval("---------------------------------------------")
+      Senao
+      Se (Area>100) e (Area <=500) Entao
+         Escreval("Seu terreno tem ",Area, "m²")
+         Escreval("Entre 100m² e 500m² = TERRENO MASTER")
+          Escreval("---------------------------------------------")
+         Senao
+         Se Area>500 Entao
+            Escreval("Seu terreno tem ",Area, "m²")
+            Escreval("Acima de 500m² = TERRENO VIP")
+             Escreval("---------------------------------------------")
+         FimSe
+      FimSe
+   FimSe
+
+
+
+
+
+fimalgoritmo
