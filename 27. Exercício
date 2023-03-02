@@ -1,0 +1,48 @@
+algoritmo "27. Exercício"
+//Proposta:Crie um programa que leia duas notas de um alumo e faça a média.
+//Mostre uma mensagem no final, conforme o resultado:
+//**Média até 4.9: Reprovado
+//**Média entre 5.0 e 6.9: Recuperação
+//**Média 7.0 ou superior: Aprovado
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+//Data:02/03/2023
+
+var
+   Nota1, Nota2, Media:Real
+   Nome: Caractere
+
+inicio
+   Escreval("------------------------------------------------")
+   Escreval("      ESCOLA DEVCODER DE TECNOLOGIA             ")
+   Escreval("------------------------------------------------")
+   Escreva("Digite o nome do Aluno : ")
+   leia(Nome)
+   Escreval("-------------------------------------------------")
+   Escreva("Digite a primeira nota do aluno " , Nome,(":"))
+   leia(Nota1)
+   Escreva("Digite a segunda nota do aluno " , Nome,(":"))
+   leia(Nota2)
+   Media<- ((Nota1+Nota2)/2)
+   Se Media <=4.9 entao
+      Escreval("------------------------------------------------")
+      Escreval("Sua média foi: ",MEDIA)
+      Escreval("Média igual ou inferior a 4.9: O Aluno ", Nome, " foi REPROVADO.")
+   Senao
+      Se (Media >=5.0) e (Media<=6.9) entao
+         Escreval("------------------------------------------------")
+         Escreval("Sua média foi: ",MEDIA)
+         Escreval("Média entre 5.0 e 6.9: O Aluno ", Nome, " está em RECUPERAÇÃO.")
+      Senao
+         Se Media >=7.0 entao
+            Escreval("------------------------------------------------")
+            Escreval("Sua média foi: ",MEDIA)
+            Escreval("Média igual ou superior a 7.0: O Aluno ", Nome, " foi  APROVADO.")
+         fimse
+      fimse
+
+   fimse
+
+
+
+fimalgoritmo
