@@ -1,0 +1,32 @@
+algoritmo "26. Exercício"
+//Proposta: Escreva um algoritmo que leia dois números inteiros
+//Faça uma comparação entre eles, mostrando as seguintes mensagens:
+//**O primeiro valor é maior.
+//**O segundo valor é maior
+//**Não existe valor maior, os dois são iguais.
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+//Data: 02/03/2023
+var
+   N1, N2 :Inteiro
+
+inicio
+   Escreval("----------------------------------------------")
+   Escreval("           COMPARADOR NUMÉRICO                ")
+   Escreval("----------------------------------------------")
+   Escreva("Digite o primeiro número: ")
+   leia(N1)
+   Escreva("Digite o segundo número: ")
+   leia(N2)
+   se (N1>N2) Entao
+      Escreval("O Primeiro valor é o maior!")
+   Senao
+      Se (N2>N1) Entao
+         Escreval("O Segundo valor é o maior!")
+      Senao
+         Escreval("Não existe valor maior, os dois são iguais!")
+      fimse
+   Fimse
+
+
+fimalgoritmo
