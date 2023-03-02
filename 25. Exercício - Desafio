@@ -1,0 +1,33 @@
+algoritmo "25 Exercício - Desafio"
+//Proposta:Ler o tamanho de 3 segmentos de reta.
+// Analisar e dizer se é possivel formar um triâgulo.
+//Matematicamente, para três segmentos de reta formarem um triângulo
+//O comprimento de cada lado, deve ser menor que a soma dos outros dois.
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+//Data: 02/03/2023
+var
+   L1, L2, L3 :Real
+
+
+inicio
+   Escreval("------------------------------------------------")
+   Escreval("          VERIFICADOR DE TRIÂNGULOS             ")
+   Escreval("------------------------------------------------")
+   Escreva("Digite o tamanho da primeira reta em cm: ")
+   leia(L1)
+   Escreva("Digite o tamanho da segunda reta em cm: ")
+   leia (L2)
+   Escreva ("Digite o tamanho da terceira reta em cm: ")
+   leia (L3)
+   Se (L1<L2+L3) e (L2<L1+L3) e (L3<L1+L2) Entao
+   Escreval("------------------------------------------------")
+      Escreval(" Essas medidas PODEM formar um triângulo")
+   senao
+    Escreval("------------------------------------------------")
+      Escreval("Essas medidas NÃO PODEM formar um triângulo")
+   fimse
+    Escreval("------------------------------------------------")
+
+
+fimalgoritmo
