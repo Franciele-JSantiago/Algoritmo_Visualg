@@ -1,0 +1,88 @@
+algoritmo "Exercício 31 - Desafio"
+//
+//Proposta: Crie um jogo de JoKenPo (Pedra-Papel-Tesoura)
+//Regras do jogo
+//Papel vence Pedra (papel enrrola pedra)
+//Tesoura vence Papel (tesoura corta papel)
+//Pedra vence Tesoura  (pedra quebra tesoura)
+//Escolhas iguais para os jogadores, geram empate
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 14/03/2023
+var
+   Jogador, PC: Inteiro
+
+inicio
+
+   Escreval("*************************************************")
+   Escreval("     JoKenPo (Pedra - Papel- Tesoura)            ")
+   Escreval("*************************************************")
+   Escreval("Olá, eu sou o computador e quero jogar com você! ")
+   Escreval("*************************************************")
+   Escreval("ESCOLHA... ")
+   Escreval("[0]PEDRA")
+   Escreval("[1]PAPEL")
+   Escreval("[2]TESOURA")
+   Escreva("Digite sua escolha:")
+   Leia(Jogador)
+   Escreval("*************************************************")
+   Escreval("     Jo (Pedra)                                  ")
+   Escreval("                  Ken (Papel)                    ")
+   Escreval("                                Po (Tesoura)     ")
+   Escreval("*************************************************")
+
+   PC <- randi(3)
+   Escolha PC
+   Caso 0
+      Escreval("Eu escolhi PEDRA.")
+   Caso 1
+      Escreval("Eu escolhi PAPEL.")
+   Caso 2
+      Escreval("Eu escolhi TESOURA.")
+   FimEscolha
+   Escolha Jogador
+   Caso 0
+      Escreval("Você escolheu PEDRA.")
+   Caso 1
+      Escreval("Você escolheu PAPEL.")
+   Caso 2
+      Escreval("Você escolheu TESOURA.")
+      FimEscolha
+ Escreval("*************************************************")
+ se (PC=0) e (Jogador=0) Entao
+ Escreval("EMPATAMOS!")
+ senao
+ se (PC = 0) e (Jogador = 1) Entao
+ Escreval("VOCÊ VENCEU!")
+ senao
+ se (PC = 0) e (Jogador = 2)Entao
+ Escreval("EU VENCI!")
+ FimSe
+ FimSe
+ FimSe
+ se (PC=1) e (Jogador=0) Entao
+ Escreval("EU VENCI!")
+ senao
+ se (PC = 1) e (Jogador = 1) Entao
+ Escreval("EMPATAMOS!")
+ senao
+ se (PC = 1) e (Jogador = 2)Entao
+ Escreval("VOCÊ VENCEU!")
+ FimSe
+ FimSe
+ FimSe
+ se (PC=2) e (Jogador=0) Entao
+ Escreval("VOCÊ VENCEU!")
+ senao
+ se (PC = 2) e (Jogador = 1) Entao
+ Escreval("EU VENCI!")
+ senao
+ se (PC = 2) e (Jogador = 2)Entao
+ Escreval("EMPATAMOS!")
+ FimSe
+ FimSe
+ FimSe
+      
+
+
+fimalgoritmo
