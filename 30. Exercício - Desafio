@@ -1,0 +1,49 @@
+algoritmo "Exercícío 30 - Desafio - Triângulos"
+//
+//
+//Proposta: Refaça algoritmo 25, mostrando qual triângulo será formado.
+//EQUILÁTERO: todos os lados iguais
+//ISÓSCELES: dois lados iguais
+//ESCALENO: todos os lados diferentes
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+//Data: 14/03/2023
+var
+L1, L2, L3 : Real
+IS, EQ, ES, TRI: Logico
+
+
+inicio
+Escreval("===========================================================")
+Escreval("             VERIFICADOR DE TRIÂNGULOS                ")
+Escreval("===========================================================")
+Escreval("Antes uma breve explicação do que são triângulos")
+Escreval("===========================================================")
+Escreval("Triângulo: o comprimento de cada lado,")
+Escreval("deve ser menor que a soma dos outros dois")
+Escreval("===========================================================")
+Escreval("Triângulo equilátero: possui todos os lados iguais")
+Escreval("Triângulo isósceles: possui dois lados iguais")
+Escreval("Triângulo escaleno: possui todos os lados diferentes")
+Escreval("===========================================================")
+Escreva ("Digite o primeiro lado:")
+leia (L1)
+Escreva ("Digite o segundo lado:")
+leia (L2)
+Escreva ("Digite o terceiro lado:")
+leia (L3)
+Escreval("===========================================================")
+TRI<- (L1<L2+L3) e (L2<L1+L3) e (L3<L1+L2)
+EQ <- (L1=L2) e (L2=L3)
+IS<- (L1=L2)ou(L2=L3)ou (L1=L3)
+ES <- (L1<>L2) e (L2<>L3) e (L1<>L3)
+Escreval ("Pode formar um triângulo?", TRI)
+Escreval ("O triângulo é equilátero?", EQ)
+Escreval ("O triângulo é isósceles?", IS)
+Escreval ("O triângulo é escaleno?", ES)
+Escreval("===========================================================")
+Escreval("Note que todo triângulo equilátero é também um triângulo isósceles")
+Escreval("Porém, nem todo triângulo isósceles é um triângulo equilátero!")
+Escreval("===========================================================")
+
+fimalgoritmo
