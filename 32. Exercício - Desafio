@@ -1,0 +1,39 @@
+algoritmo "Exercício 32 - Desafio"
+//
+//Proposta: Crie um jogo onde o computador sorteie um número de 1 a 5
+//O Jogador tentará descobrir qual número foi sorteado
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 15/03/2023
+var
+ PC, Jogador: Inteiro
+inicio
+Escreval("===========================================")
+Escreval("               VAMOS JOGAR?                ")
+Escreval("       Vou sortear um número de 1 a 5      ")
+Escreval("           Quer tentar acertar?            ")
+Escreval("===========================================")
+PC <- randi(7)
+se (PC = 0) entao
+pc <- 1
+FimSE
+Escreva("Digite seu palpite:")
+leia(Jogador)
+Escreval("===========================================")
+TIMe(300)
+Escreval("Sorteando....")
+Escreval("           ......")
+Escreval("               ......")
+Escreval("                    ......")
+Escreval("                          ......")
+TIMe(0)
+Escreval("============================================")
+Se (Jogador = PC) entao
+Escreval ("Parabéns,você acertou! Eu sorteei o Nº ",Jogador)
+senao
+Escreval("Errou.. Eu sorteei o Nº",PC)
+FimSe
+Escreval("============================================")
+
+
+fimalgoritmo
