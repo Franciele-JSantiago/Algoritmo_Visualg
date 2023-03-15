@@ -1,0 +1,57 @@
+algoritmo "Exercício 33"
+//
+//Proposta:Escreva um programa para aprovar ou recusar o empréstimo para a compra de uma casa
+//O programa deve perguntar o valor da casa
+//Salário do comprador
+//E em quantos anos ele pretende pagar
+//Calcule o valor da prestação mensal, sabendo que ela não pode exceder 30%
+//se passar, o empréstimo deve ser negado
+var
+VCasa,Sal,Parc30,Parcela,QtdadeParc: Real
+
+inicio
+Escreval("=====================================================")
+Escreval("      Empréstimos imobiliários DevCoder")
+Escreval("=====================================================")
+Escreval("Seja Bem Vindo(a), vamos fazer uma simulação?")
+Escreval("=====================================================")
+Escreva("Digite o Valor do imóvel:")
+leia(Vcasa)
+Escreva("Digite o valor do seu Salário:")
+leia(Sal)
+Escreval("=====================================================")
+Escreval("Conheça nossos planos de parcelamento")
+Tempo(600)
+Escreval ("[12] VEZES = 1 ANO ")
+escreval ("[24] VEZES = 2 ANOS")
+escreval ("[36] VEZES = 3 ANOS")
+escreval ("[48] VEZES = 4 ANOS")
+Escreval ("[60] VEZES = 5 ANO ")
+escreval ("[72] VEZES = 6 ANOS")
+escreval ("[84] VEZES = 7 ANOS")
+escreval ("[96] VEZES = 8 ANOS")
+temPO(0)
+Escreva("Digite o plano escolhido:")
+leia(QtdadeParc)
+Parc30 <- (Sal*30)/100
+Parcela<-(VCasa/QtdadeParc)
+Tempo(1800)
+Escreval("=====================================================")
+Escreval("O Valor do Imóvel é de R$ ", VCasa :8:2)
+Escreval("O valor do Salário é de R$ ", Sal :8:2)
+Escreval("O Parcelamento será em ", QtdadeParc, " vezes ")
+Escreval("O valor da parcela ficará em R$ ",Parcela :8:2)
+Escreval("Baseado na sua renda, a parcela ideal seria de :" ,Parc30:8:2)
+temPO(0)
+Escreval("=====================================================")
+se (Parcela <= Parc30 ) entao
+ escreval ("Parabéns! Você tem o crédito pré-aprovado.")
+ Escreval("====================================================")
+ Senao
+   escreval ("Infelizmente não podemos liberar seu empréstimo.")
+   Escreval("==================================================")
+
+     FimSe
+
+
+fimalgoritmo
