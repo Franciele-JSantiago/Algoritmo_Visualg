@@ -1,0 +1,55 @@
+algoritmo "EXERCÍCIO 34 - IMC"
+//
+//Proposta:O índice de massa corpórea (IMC) é um valor calculado baseado na altura e no peso da pessoa.
+//De acordo com o valor IMC, podemos classificar o indivíduo dentro de certas faixas.
+//Obs: O IMC é calculado pela expressão peso/altura² (peso dividido pelo quadrado da altura)
+
+//Abaixo de 18.5 - Abaixo do peso
+//Entre 18.5 á 25 - Peso ideal
+//Entre 25 á 30 - Sobrepeso
+//De 30 á 40 - Obesidade
+//Acima de 40 - Obesidade Mórbida
+
+//Autora:Franciele Jucjem Santiago
+//Prof: Gustavo Guanabara
+//Data:16/03/2023
+
+var
+   M, A, IMC: REAL
+
+inicio
+   Escreval("=====================================================")
+   Escreval("               CALCULADORA DE IMC                    ")
+   Escreval("=====================================================")
+   Escreva("Digite seu peso (Kg): ")
+   Leia (M)
+   Escreva("Digite sua Altura (M): ")
+   Leia (A)
+   Escreval("=====================================================")
+   IMC <- M / ( A ^ 2 )
+   Escreval("IMC: ", IMC:5:2)
+
+   Se  (IMC <18.5)entao
+      Escreval("Você está abaixo do pêso")
+   Escreval("=====================================================")
+   senao
+      Se (IMC >=18.5) e (IMC <25) entao
+         Escreval("Você está com o peso Ideal")
+   Escreval("=====================================================")
+      senao
+         Se (IMC >=25) e (IMC <30) entao
+            Escreval("Você está com sobrepeso")
+   Escreval("=====================================================")
+         senao
+            Se  (IMC >=30) e (IMC <40) entao
+               Escreval("Você está com obesidade")
+   Escreval("=====================================================")
+            senao
+               Escreval("Você está com obesidade Mórbida")
+   Escreval("=====================================================")
+            FimSE
+         FimSE
+      FimSE
+   FimSE
+
+fimalgoritmo
