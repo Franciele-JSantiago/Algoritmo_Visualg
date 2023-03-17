@@ -1,0 +1,83 @@
+algoritmo "Exercicio 35 
+//
+//Proposta:Uma empresa de carros precisa cobrar pelos seus serviços.
+//Faça um programa que leia o tipo de carro alugado(popular ou luxo)
+//Quantos dias de aluguel e quantos km foram percorridos.
+//Mostre no final o preço a ser pago de acordo com a tabela a seguir.
+
+// - CARROS POPULARES (aluguel de R$ 90,00 por dia)
+//----Até 100Km percorridos: R$0,20 por Km
+//----Acima de 100Km percorridos: R$ 0,10 por Km.
+
+// - CARROS DE LUXO (aluguel de R$ 150,00 por dia)
+//----Até 200Km percorridos: R$0,30 por Km
+//----Acima de 200Km percorridos: R$ 0,25 por Km.
+
+//Autora: Franciele J. Santiago
+//Prof: Gustavo Guanabara
+//Data: 17/03/2023
+
+var
+
+  Carro, Dias: Inteiro
+  km,CustoDia,Aluguel, KmRodado,TarDia : Real
+  
+inicio
+Escreval("---------------------------------------------------------")
+Escreval("       FranDevcoderSystem - Locadora de Automóveis       ")
+Escreval("---------------------------------------------------------")
+Escreval("           Do carro popular ao carro de luxo             ")
+Escreval("---------------------------------------------------------")
+TEMPO(600)
+Escreval("                         Olá                             ")
+Escreval("Iremos calcular o valor á ser pago pelo aluguel do carro.")
+Escreval("       favor inserir as seguintes informações            ")
+Escreval("---------------------------------------------------------")
+Escreval("Tipo de carro")
+Escreval("[1]Carro Popular")
+Escreval("[2]Carro de Luxo")
+Escreva("Digite o tipo escolido:")
+leia(Carro)
+escolha Carro
+        caso 1
+        TarDia <- 90
+        caso 2
+        Tardia <- 150
+FimEscolha
+Escreva("Digite a quantidade de kilometros percorridos pelo veículo: ")
+leia (km)
+Escreva("Digite a quantidade de dias pelos quais o carro foi alugado: ")
+leia (Dias)
+tempo(0)
+Se (TarDia = 90)e (Km <=100)entao
+KmRodado <- km * 0.20
+CustoDia<- Dias * 90.00
+Aluguel<- KmRodado + CustoDia
+   senao
+   se (TarDia = 90) e (Km > 100) entao
+   KmRodado <- km * 0.10
+CustoDia<- Dias * 90.00
+Aluguel<- KmRodado + CustoDia
+         FimSe
+FimSe
+se (TarDia = 150) e (Km <= 200) entao
+KmRodado <- km * 0.30
+CustoDia<- Dias * 150.00
+Aluguel<- KmRodado + CustoDia
+   senao
+   se (TarDia = 150) e (Km > 200) entao
+   KmRodado <- km * 0.25
+CustoDia<- Dias * 150.00
+Aluguel<- KmRodado + CustoDia
+  FimSe
+FimSe
+Tempo(600)
+Escreval("---------------------------------------------------------")
+Escreval ("O valor a se pago em kilometragem é R$", KmRodado:6:2)
+Escreval ("O valor a ser pago em diárias é R$", CustoDia:7:2)
+Escreval ("O valor total a ser pago pelo Aluguel é R$", Aluguel:7:2)
+Escreval("---------------------------------------------------------")
+
+TempO(0)
+
+fimalgoritmo
