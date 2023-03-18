@@ -1,0 +1,51 @@
+algoritmo "Exercício 36"
+//
+//Um programa de vida saudável quer dar pontos por atividade física que podem ser trocados por dinheiro.
+//Proposta:Faça um programa que leia quantas horas de atividade uma pessoa teve por mês.
+//Calcule e mostre quantos pontos ela teve e quanto de dinheiro ela conseguiu ganhar.
+//Cada hora de atividade física no mês vale pontos
+//Até 10h de atividade no mês: ganha 2 pontos por hora
+//De 10h até 20h de atividade no mês: ganha 5 pontos por hora
+//Acima de 20h de atividade no mêss: ganha 10 pontos por hora
+//A cada ponto ganho, o cliente fatura R$0,05 (5 centavos)
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 18/03/2023
+
+var
+Nome : Caractere
+Horas,GanhoTotal: Real
+Pontos:Inteiro
+
+inicio
+Escreval("================================================================")
+Escreval("               PROGRAMA: VIDA SAUDÁVEL             ")
+Escreval("Tenha uma vida saudável e ganhe premios em dinheiro")
+Escreval("================================================================")
+Escreval("  Cada hora de atividade física no mês vale pontos ")
+Escreval("         Até 10h : ganha 2 pontos por hora         ")
+Escreval("     De 10h até 20h : ganha 5 pontos por hora      ")
+Escreval("      Acima de 20h : ganha 10 pontos por hora      ")
+Escreval("   A cada ponto, Você ganha R$0,05 (5 centavos)    ")
+Escreval("================================================================")
+Escreva("Digite seu Nome:")
+leia(Nome)
+Escreva("Digite quantas horas você se exercitou no mês:")
+leia(Horas)
+Se (Horas<10)entao
+Pontos<-2
+senao
+se  (Horas>=10)e (Horas<20)entao
+Pontos<-5
+senao
+se (Horas>20)entao
+Pontos<-10
+fimSe
+fimse
+FimSe
+GanhoTotal<- (Horas*Pontos*0.05)
+Escreval("De acordo com o tempo que você treinou, você ganhou " ,Pontos, " Pontos")
+Escreval("Parabéns " , Nome, " ,como cada ponto vale R$0,05 Você ganhou R$ ", GanhoTotal:5:2)
+Escreval("================================================================")
+
+fimalgoritmo
