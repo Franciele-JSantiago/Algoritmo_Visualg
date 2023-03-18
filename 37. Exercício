@@ -1,0 +1,64 @@
+algoritmo "Exercício 37"
+//
+//Proposta:Uma empresa precisa reajustar o salário dos seus funcionários
+//Dando um aumento de acordo com alguns fatores
+//Faça um programa que leia o salário atual,
+//O gênero do funcionário
+//Há quantos anos esse funcionário trabalha na empresa.
+//No final mostre o novo salário, de acordo com a tabela a seguir:
+//Mulheres
+//-Menos de 15 anos de empresa:+5%
+//-De 15 até 20 anos de empresa:+12%
+//-Mais de 20 anos de empresa:+23%
+//Homens
+//-Menos de 20 anos de empresa:+3%
+//-De 20 até 30 anos de empresa:+13%
+//-Mais de 30 anos de empresa:+25%
+
+var
+Nome: Caracter
+Genero, Anos: Inteiro
+SalAtual, SalNovo: Real
+
+inicio
+Escreval("*************************************************************")
+Escreval("            Calculadora Salarial                     ")
+Escreval("*************************************************************")
+Escreva("Digite o Nome do funcionário: ")
+leia (Nome)
+Escreva("Digite o Salário atual do funcionário: ")
+leia(SalAtual)
+Escreva("Digite quantos anos o funcionário tem de empresa: ")
+leia(Anos)
+Escreval("[1]Mulher")
+Escreval("[2]Homem")
+Escreva("Digite o gênero do funcionário: ")
+leia(Genero)
+Escreval("*************************************************************")
+se (Genero=1)e(Anos<15)entao
+SalNovo<- salAtual+((SalAtual*5)/100))
+senao
+se (Genero=1)e(Anos>=15)e(Anos<20)entao
+SalNovo<-SalAtual+((SalAtual*12)/100))
+senao
+se (Genero=1) e (Anos>=20)entao
+SalNovo<-SalAtual+((SalAtual*23)/100))
+FimSe
+FimSe
+FimSe
+se (Genero=2)e(Anos<20)entao
+SalNovo<-(SalAtual)+((SalAtual*3)/100))
+senao
+se (GENERO=2)E(Anos>=20)e(Anos<30)entao
+SalNovo<-(SalAtual)+((SalAtual*13)/100))
+senao
+se (gENERO=2)E(Anos>=30)entao
+SalNovo<-(SalAtual)+((SalAtual*25)/100))
+FimSe
+FimSe
+FimSe
+
+Escreval("O Funcionário(a): ", Nome," receberá a partir de agora R$:" , SalNovo:7:2)
+Escreval("*************************************************************")
+
+fimalgoritmo
