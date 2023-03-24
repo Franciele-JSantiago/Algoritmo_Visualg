@@ -1,0 +1,21 @@
+algoritmo "Exercício 38"
+//
+//PROPOSTA: Escreva um programa que mostre na tela a seguinte contagem:
+//6 7 8 9 10 11 acabou!
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 24/03/2023
+var
+   contador:Inteiro
+
+inicio
+   CONTADOR <-6
+   Enquanto contador<11 faca
+      contador <- contador + 1
+      escreva(contador)
+   fimEnquanto
+   Escreva(" Acabou!")
+
+
+
+fimalgoritmo
