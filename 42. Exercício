@@ -1,0 +1,25 @@
+algoritmo "Exercício 42"
+//
+//PROPOSTA: Faça um algoritmo que pergunte ao usuário um número inteiro e positivo
+//e mostre uma contagem até esse valor:
+//EX: Digite um valor: 35
+// Contagem: 1 2 3 4 5 6 7 ......33 34 35 Acabou!
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 24/03/2023
+
+var
+   Contagem, Final, valor: Inteiro
+
+inicio
+   Escreva("Digite um valor: ")
+   leia (valor)
+   Contagem <-0
+   Final <- valor
+   Enquanto Contagem < Valor faca
+      Contagem <- Contagem + 1
+      Escreva(Contagem)
+   FimEnquanto
+   Escreva(" Acabou!")
+
+fimalgoritmo
