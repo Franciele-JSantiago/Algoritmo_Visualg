@@ -1,0 +1,21 @@
+algoritmo "Exercício 39"
+//
+//PROPOSTA: Faça um algoritmo que mostre na tela a seguinte montagem:
+// 10 9 8 7 6 5 4 3 Acabou!
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 24/03/2023
+var
+   Contador: Inteiro
+
+inicio
+   Contador<-11
+   Enquanto Contador >3 faca
+     Contador <- Contador -1
+     Escreva(Contador)
+   FimEnquanto
+    Escreva(" Acabou!")
+     
+   
+
+fimalgoritmo
