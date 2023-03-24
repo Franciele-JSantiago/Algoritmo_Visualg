@@ -1,0 +1,26 @@
+algoritmo "Exercício 43"
+//
+//PROPOSTA:Desenvolva um algoritmo que mostre uma contagem regressiva de 30 até 1.
+//marcando os números que forem divisíveis por 4, exatamente como mostrado abaixo:
+//30 29 [28] 27 26 25 [24] 23 22 21 [20] 19 18 17 [16]...
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 24/03/2023
+
+var
+  Contagem: Inteiro
+
+
+inicio
+  Contagem <-30
+  Enquanto Contagem >=1 Faca
+    Se (Contagem %4=0) entao
+    Escreva(" [", Contagem:1, "]")
+    senao
+    Escreva(Contagem)
+  FimSe
+  Contagem <- Contagem -1
+  FimEnquanto
+  Escreva(" Acabou!")
+
+fimalgoritmo
