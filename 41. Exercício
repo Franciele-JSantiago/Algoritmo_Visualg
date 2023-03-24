@@ -1,0 +1,22 @@
+algoritmo "Exercício 41"
+//
+//Proposta: Desenvolva um programa que mostre na tela a seguinte contagem:
+//100 95 90 85 80 ...0 Acabou!
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data 24/03/2023
+
+var
+   Contador, Salto: Inteiro
+
+inicio
+   Contador <- 105
+   Salto<- 5
+   Enquanto contador>0 faca
+      Contador <- Contador - salto
+      Escreva(contador)
+   FimEnquanto
+   Escreva(" Acabou!")
+
+
+fimalgoritmo
