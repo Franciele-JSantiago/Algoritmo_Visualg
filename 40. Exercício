@@ -1,0 +1,20 @@
+algoritmo "Exercício 40"
+//
+//PROPOSTA:Crie um aplicativo que mostrena tela a seguinte contagem:
+//0 3 6 9 12 15 18 Acabou!
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 24/03/2023
+var
+   Contagem, Salto:Inteiro
+
+inicio
+   Contagem <-0
+   Salto<-3
+   Enquanto contagem <18 faca
+      contagem <- Contagem + Salto
+      Escreva (Contagem)
+   FimEnquanto
+   Escreva(" Acabou!")
+
+fimalgoritmo
