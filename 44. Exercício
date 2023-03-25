@@ -1,0 +1,33 @@
+algoritmo "Exercício 44"
+//
+//PROPOSTA:Crie um algoritmo que leia o valor inicial da contagem,
+//O valor final e o incremento, mostrando em seguida todos os valores no intervalo.
+//Ex: Digite o primeiro valor: 3
+//Digite o último valor:10
+//Digite o incremento: 2
+//Contagem: 3 5 7 9 Acabou!
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:25/03/2023
+var
+
+   Contador,Prim, Ult, Incr: Inteiro
+
+inicio
+
+
+   Escreva("Digite o primeiro valor: ")
+   leia (Prim)
+   Escreva("Digite o último valor: ")
+   leia (Ult)
+   Escreva("Digite o incremento: ")
+   leia (Incr)
+   Contador <- Prim
+   Escreva("Contagem: ")
+   Enquanto Contador < Ult faca
+      Escreva(Contador)
+      contador <- Contador + Incr
+   FimEnquanto
+   Escreva(" Acabou!")
+
+fimalgoritmo
