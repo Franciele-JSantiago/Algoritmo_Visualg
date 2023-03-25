@@ -1,0 +1,57 @@
+algoritmo "Exercício 45"
+//
+//PROPOSTA:O Exercício 44 vai ter um problema quando digitarmos o primeiro
+//valor maior que o último.
+//Resolva esse problema com o código que funcione em qualquer situação.
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:25/03/2023
+var
+
+   Start, Stop, Salto: Inteiro
+
+inicio
+
+   Escreval("===================================================")
+   Escreval("          SISTEMA DE CONTAGEM AVANÇADA             ")
+   Escreval("===================================================")
+
+   Escreva("Digite o primeiro valor: ")
+   leia (Start)
+   Escreva("Digite o último valor: ")
+   leia (Stop)
+   Escreva("Digite o incremento: ")
+   leia (Salto)
+
+   Escreval("===================================================")
+   Se (Salto = 0) entao
+      EscrevaL("INCREMENTO INVÁLIDO")
+   Escreval("===================================================")
+   senao
+
+      Se (Start < Stop) entao
+         Escreva("Contagem: ")
+         Enquanto (Start <=Stop) faca
+            Escreva(Start)
+            Start <- Start + Salto
+
+         FimEnquanto
+         EscrevaL(" Acabou!")
+   Escreval("===================================================")
+
+      senao
+
+         Se (Start > Stop) entao
+            Escreva("Contagem: ")
+            Enquanto (Start >= Stop) faca
+               Escreva(start )
+               Start <- Start - Salto
+            FimEnquanto
+            EscrevaL(" Acabou!")
+   Escreval("===================================================")
+         fimse
+      fimse
+   fimse
+
+ fimalgoritmo
+
