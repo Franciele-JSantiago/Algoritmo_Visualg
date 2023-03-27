@@ -1,0 +1,33 @@
+algoritmo "Exercício 48"
+//
+//PROPOSTA: Faça um programa que leia 7 números inteiros.
+//No final mostre a soma entre eles.
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 27/03/2023
+var
+
+   Contador,Pare,Num,Soma: Inteiro
+
+
+inicio
+   Escreval("================================================")
+   Escreval("              CALCULADORA                       ")
+   Escreval("================================================")
+   Contador <- 1
+   Soma <- 0
+
+
+   Enquanto (Contador <=7 )faca
+      Escreva("Digite o ", contador, " º número: ")
+      leia(Num)
+      Soma <-Soma + Num
+      Contador <- Contador +1
+
+   FimEnquanto
+
+
+
+   Escreval("A soma de todos os valor foi:", soma)
+
+fimalgoritmo
