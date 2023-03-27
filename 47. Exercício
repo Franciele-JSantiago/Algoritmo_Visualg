@@ -1,0 +1,27 @@
+algoritmo "Exercício 47"
+//
+//PROPOSTA: Desenvolva um app que mostre na tela o resultado da expressão
+//500 + 450 + 400 + 350 + ......50 + 0.
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 27/03/2023
+
+var
+   Contador, Salto, soma: Inteiro
+
+inicio
+   Contador <- 550
+   Salto <-50
+   Soma <-0
+   Tempo(100)
+   Enquanto (contador  > 50) faca
+      contador <- contador - salto
+      soma <- soma + contador
+      Escreva (contador, " +")
+   FimEnquanto
+
+   Escreval(" 0.")
+
+   Escreval ("A soma entre esses números é de " , soma)
+   tempo(0)
+fimalgoritmo
