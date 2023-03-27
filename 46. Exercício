@@ -1,0 +1,26 @@
+algoritmo "Exercício 46"
+
+// PROPOSTA: Crie um programa que calcule e mostre na tela o resultado da soma
+//entre 6+8+10+12+14+......+98+100.
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:25/03/2023
+
+var
+   Contador, Soma:Inteiro
+
+inicio
+   Contador <- 6
+   Soma<-0
+   Enquanto (Contador <= 100) faca
+      escreva (contador, " +")
+      contador <- contador + 2
+      soma <- Soma + contador
+
+   FimEnquanto
+   Escreval(".")
+
+   Escreval ("A soma entre todos os números é ", soma)
+
+
+fimalgoritmo
