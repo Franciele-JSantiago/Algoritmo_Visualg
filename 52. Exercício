@@ -16,13 +16,13 @@ var
 inicio
    Contador <-1
    Totalidade <-0
-   Enquanto (Contador <= 5) faca
+   Enquanto (Contador <= 10) faca
       Escreva( "Digite a idade da " ,contador, "º. pessoa: ")
       leia(Idade)
 
       Contador <- Contador+1
       Totalidade <- Totalidade+Idade
-      Media <- Totalidade/2
+      Media <- Totalidade/10
       Se (Idade > 18) entao
          Mais18 <- Mais18 + 1
       FimSe
