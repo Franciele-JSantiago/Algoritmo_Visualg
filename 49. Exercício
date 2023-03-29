@@ -1,0 +1,35 @@
+algoritmo "Exercício 49"
+//
+//PROPOSTA:Crie um programa que leia 6 números inteiros.
+//No final mostre quantos deles são pares e quantos são ímpares
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data 27/03/2023
+
+var
+   Contador, Par, Impar, Num: inteiro
+
+inicio
+   Contador <-1
+   Par<-0
+   Impar<-0
+   Enquanto (contador <=6) faca
+      Escreva ( "Digite o ", Contador, " ° número: ")
+      Leia(Num)
+      Se ( Num % 2 = 0)entao
+         Par <- Par + 1
+      senao
+         Se (Num % 2 = 1) entao
+            Impar <- Impar +1
+         FimSe
+      FimSe
+      Contador<-Contador + 1
+   FimEnquanto
+
+   Escreval( Par , " números são Par. ")
+   Escreval( Impar , " números são Impar.")
+
+
+
+
+fimalgoritmo
