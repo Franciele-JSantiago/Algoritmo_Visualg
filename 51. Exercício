@@ -1,0 +1,34 @@
+algoritmo "Exercício 51"
+//
+//PROPOSTA: Faça um aplicativo que leia o preço de 8 produtos.
+//No final mostre na tela qual foi o maior e qual o menor preço digitado.
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 29/03/2023
+
+var
+   Contador,Valor, Menor, Maior, soma: Real
+
+inicio
+   Contador <- 1
+   Soma<-0
+   Enquanto (Contador <=8) faca
+      Escreva("Digite o valor do " ,Contador, " º produto:")
+      contador<-Contador+1
+      leia(Valor)
+      Se (Valor < Menor) ou (Menor=0) entao
+         Menor <- Valor
+      fimse
+      Se (Valor > Maior)entao
+         Maior <-Valor
+      FimSe
+      Soma <-Soma + Valor
+
+
+   FimEnquanto
+   Escreval("O menor preço foi de R$ ", Menor:4:2)
+   Escreval("O maior preço foi de R$ ", Maior:4:2)
+   Escreval("A Soma de todos os valor foi: ", Soma:4:2)
+
+
+fimalgoritmo
