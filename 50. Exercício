@@ -1,0 +1,44 @@
+algoritmo "Exercício 50"
+//
+//Desenvolva um programa que faça o sorteio de 20 números.
+//Sorteie de 0 á 10 e mostre na tela.
+//a) Quais foram os números sorteados
+//b) Quantos números estão acima de 5
+//c)Quantos números são divisíveis por 3
+//Autora: Franciele uchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 29/03/2023
+
+var
+   Sorteio, Contador, Acima5, Div3: INTEIRO
+
+inicio
+   Escreval("============================================")
+   Escreval( "Vamos sortear 20 números de 0 á 10")
+   Escreval("============================================")
+   Contador <- 1
+   Acima5<-0
+   Div3<-0
+   TemPo(300)
+   Enquanto (Contador <=20) faca
+      Sorteio <- Randi(11)
+      Escreva(Sorteio)
+      Contador <-Contador + 1
+      Se (Sorteio >5) entao
+         Acima5 <- Acima5 +1
+      FimSe
+      Se (Sorteio %3=0) entao
+         Div3 <- Div3 +1
+
+      fimse
+
+   FimEnquanto
+   Escreval(".")
+   Escreval("============================================")
+   Escreval( Acima5, " estão acima de 5.")
+   Escreval( DIV3, " são divisíveis por 3")
+   Escreval("============================================")
+
+   TemPo(0)
+
+fimalgoritmo
