@@ -1,0 +1,42 @@
+algoritmo "Exercício 52"
+//
+//PROPOSTA: Crie um algoritmo que leia a idade de 10 pessoas, mostrando no final:
+//a)Qual a média de idade do grupo
+//b)Quantas pessoas tem mais de 18 anos
+//c)Quantas pessoas tem menos de 5 anos
+//d)Qual foi a maior idade lida
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 29/03/2023
+
+var
+   Media: Real
+   Contador, Idade,Mais18, Menos5,Maior,Totalidade:Inteiro
+
+inicio
+   Contador <-1
+   Totalidade <-0
+   Enquanto (Contador <= 5) faca
+      Escreva( "Digite a idade da " ,contador, "º. pessoa: ")
+      leia(Idade)
+
+      Contador <- Contador+1
+      Totalidade <- Totalidade+Idade
+      Media <- Totalidade/2
+      Se (Idade > 18) entao
+         Mais18 <- Mais18 + 1
+      FimSe
+      se (Idade < 5) entao
+         Menos5 <- Menos5 + 1
+      FimSe
+      Se (idade > Maior)entao
+         maior <- idade
+      FimSe
+   FimEnquanto
+   Escreval ("A Média de idade do grupo é de [", media, " ]anos.")
+   Escreval("[",Mais18," ] pessoa(s) tem mais de 18 anos.")
+   Escreval("[",Menos5," ] pessoa(s) tem menos de 5 anos.")
+   Escreval ("A Maior idade do grupo é de [", maior, " ]anos.")
+
+
+fimalgoritmo
