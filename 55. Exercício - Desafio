@@ -1,0 +1,48 @@
+algoritmo "Exercício 55 - Desafio"
+//
+//Proposta: Vamos melhorar o jogo que fizemos no exercício 32
+//A partir de agora, o computador vai sortear um número entre 1 e 10.
+//O jogador vai ter 4 chances de tentar acertar.
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 29/03/2023
+var
+ PC, Jogador, contador: Inteiro
+inicio
+Escreval("===========================================")
+Escreval("               VAMOS JOGAR?                ")
+Escreval("       Vou sortear um número de 1 a 10     ")
+Escreval("         Você terá 4 chances de acertar    ")
+Escreval("           Quer tentar acertar?            ")
+Escreval("===========================================")
+PC <- randi(11)
+se (PC = 0) entao
+pc <- 1
+Fimse
+Contador <-1
+Enquanto (contador <=4) faca
+Escreva("Digite seu palpite:")
+leia(Jogador)
+Escreval("===========================================")
+Timer(300)
+Escreval("Sorteando....")
+Escreval("           ......")
+Escreval("               ......")
+Escreval("                    ......")
+Escreval("                          ......")
+Timer(0)
+Escreval("============================================")
+Se (Jogador = PC) entao
+Escreval ("Parabéns,você acertou! Eu escolhi o Nº ",Jogador)
+contador <- 4
+senao
+Escreval("Errou.. Eu escolhi o Nº",PC)
+FimSe
+Escreval("============================================")
+
+contador <- contador +1
+Fimenquanto
+
+
+
+fimalgoritmo
