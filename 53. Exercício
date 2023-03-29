@@ -1,0 +1,53 @@
+algoritmo "Exercício 53"
+//
+//PROPOSTA:Faça um programa que leia a idade e sexo de 5 pessoas,
+//mostrando no final:
+//a)Quantos homens foram cadastrados
+//b)Quantas mulheres foram cadastradas
+//c)A média de idade do grupo
+//d)A média de idade dos homens
+//e)Quantas mulheres tem mais de 20 anos
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 29/03/2023
+
+var
+   Contador, Idade ,QtHom,QtMul,Totalidade,Soma,Mulheres20, sexo: Inteiro
+   MediaIdade, MediaHomens : Real
+
+inicio
+   Contador <- 1
+   Totalidade <-0
+   soma<-0
+   Escreval("====================================================")
+   Enquanto (Contador <=5) faca
+      Escreva("Digite a ", contador, " º idade: ")
+      leia (idade)
+      Escreval("Escolha sexo")
+      Escreval("[ 1 ] - Homem")
+      Escreval("[ 2 ] - Mulher")
+      Escreva("Digite o sexo:")
+      leia(sexo)
+      Totalidade<- (Totalidade + idade)
+      mediaIdade <- totalidade/5
+      Escolha Sexo
+      Caso 1
+         QtHom <-QtHom + 1
+         Soma <- Soma + idade
+         MediaHomens <- Soma/QtHom
+      Caso 2
+         QtMul <- QtMul + 1
+         se (Idade >20) entao
+            Mulheres20 <- Mulheres20 + 1
+         Fimse
+      FimEscolha
+      contador <- contador +1
+      Escreval("====================================================")
+   FimEnquanto
+   Escreval("Foram cadastrados [", QtHom, " ] Homens")
+   Escreval("Foram cadastrados [", QtMul, " ] Mulheres")
+   Escreval("A Média de idade do grupo é de [ ", MediaIdade:4:2, " ] Anos")
+   Escreval ("A média de idade dos homens é de [ ", MediaHomens:4:2, " ] Anos")
+   Escreval("Total de Mulheres tem mais de 20 anos: [", Mulheres20," ]" )
+   Escreval("====================================================")
+fimalgoritmo
