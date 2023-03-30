@@ -1,0 +1,47 @@
+algoritmo "Exercício 54"
+//
+//PROPOSTA: Desenvolva um aplicativo que leia o peso e a altura de 7 pessoas.
+//Mostrando no final
+//a)Qual foi a média de altura do grupo
+//b)Quantas pessoas pesam mais de 90 kilos
+//c)Quantas pessoas que pesam menos de 50 kg tem 1.60m.
+//D)Quantas pessoas que medem mais de 1.90 pesam mais de 100Kg.
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:30/02/2023
+
+var
+   Contador,Maisde90, Menosde50, Maisde100: Inteiro
+   Media,Totalidade, Peso, Altura :Real
+
+inicio
+
+   Contador <-1
+   Escreval("=================================================================")
+   Enquanto (Contador <=7) faca
+      Escreva("Digite o ", Contador, "º peso:")
+      leia(Peso)
+      Escreva("Digite a ", contador, " º altura: ")
+      leia(Altura)
+      Escreval("==============================================================")
+      Totalidade <- Totalidade + Altura
+      Media <- (Totalidade/7)
+      Contador <- Contador+1
+      Se (Peso > 90 ) entao
+         Maisde90 <- Maisde90 + 1
+      FimSe
+      Se (Peso < 50) e (Altura = 1.60) entao
+         Menosde50 <- Menosde50 + 1
+      FimSe
+      Se (Altura > 1.90) e (Peso > 100) entao
+         Maisde100 <- Maisde100 + 1
+      FimSe
+   FimEnquanto
+
+   Escreval("A média de altura do grupo foi: ", Media:3:2)
+   Escreval("Quantas pessoas pesam mais de 90 Kg ? ", Maisde90)
+   Escreval("Quantas pessoas que pesam menos de 50Kg, tem 1.60m ? ", Menosde50)
+   Escreval("Quantas pessoas que medem mais de 1.90m, pesam mais de 100Kg ? ", Menosde50)
+   Escreval("================================================================")
+
+fimalgoritmo
