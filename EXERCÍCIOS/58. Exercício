@@ -1,0 +1,36 @@
+algoritmo "Exercício 58"
+
+//PROPOSTA:Faça um algoritmo que leia a idade de vários alunosde uma turma.
+//O programa vai parar quando for digitado 999
+//Mostre quantos alunos tem na turma
+//Mostre a idade média da turma.
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 06/04/2023
+var
+
+   Idade, Cont: Inteiro
+   Media, soma, somaReal: Real
+
+inicio
+   Escreval("=======================================")
+   Escreval("         MÉDIA IDADE ALUNOS            ")
+   Escreval(" Digite somente a idade, pare com 999  ")
+   Escreval("=======================================")
+
+   Repita
+      Escreva("Digite a idade do aluno: ")
+      leia (Idade)
+     cont<-cont+1
+     Soma <- Soma + Idade
+   Até (Idade = 999)
+   Se Idade = 999 entao
+      Cont <- Cont-1
+      SomaReal <- Soma-999
+      Media <-SomaReal / Cont
+
+   fimSe
+   Escreval("A Turma tem ", Cont , " alunos.")
+   Escreval("A Média de idade entre os alunos é de ", Media, " anos.")
+
+fimalgoritmo
