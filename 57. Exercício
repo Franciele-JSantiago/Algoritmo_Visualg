@@ -1,0 +1,44 @@
+algoritmo "Exercício 57"
+
+//PROPOSTA:Desenvolva um aplicativo que leia o salário e o sexo de vários funcionários.
+//Mostre o total de salários pagos aos homens e o total pago as mulheres.
+//O programa vai perguntar ao usuário se ele quer continuar ou não, a cada leitura de dados.
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 06/04/2023
+
+var
+   Sal, SomaM, SomaF: Real
+   Sexo,Resp : Caractere
+
+inicio
+
+
+   Escreval("==========================================")
+   Escreval("         CONTROLE DE PAGAMENTOS           ")
+   Escreval("==========================================")
+   Repita
+   Escreval("     INSIRA OS DADOS DO FUNCIONÁRIO       ")
+   Escreval("==========================================")
+   TEMPO(100)
+      Escreva("Digite o valor do Salário :")
+      leia(Sal)
+      Escreva("Digite o Gênero do Funcionário [M/F]: ")
+      leia (Sexo)
+      Escreva("Deseja continuar? [S/N] ")
+      leia (Resp)
+      Escolha Sexo
+      Caso "M"
+      SomaM <- SomaM + Sal
+      Caso "F"
+      SomaF <- SomaF + Sal
+      
+      fimescolha
+
+   Até (Resp = "N")
+ Escreval("==========================================")
+ TEMPO(0)
+ Escreval("A Soma dos salários pagos aos homens é de R$ ", SomaM:5:2)
+ Escreval("A Soma dos salários pagos ás mulheres é de R$ ", SomaF:5:2)
+
+fimalgoritmo
