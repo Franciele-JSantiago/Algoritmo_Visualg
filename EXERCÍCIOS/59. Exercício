@@ -1,0 +1,60 @@
+algoritmo "Exercício 59"
+
+//PROPOSTA:Crie um programa que leia a idade e sexo de várias pessoas.
+//O programa vai perguntar se o usuário quer ou não continuar a cada usuário.
+//No final mostre:
+//a)Qual é a maior idade lida
+//b)Quantos homens foram cadastrados
+//c)Qual é a idade da mulher mais jovem
+//d)Qual é a media de idade entre os homens.
+
+var
+   Resp, Gen: Caractere
+   Cont, Idade, Maior,Menor, TotalIdade, ContM: Inteiro
+   Media: Real
+
+inicio
+   Escreval("=============================================")
+   Escreval("           PROGRAMA DE PESQUISA              ")
+   Escreval("=============================================")
+   Escreval("     Digite as informações solicitadas.      ")
+   Escreval("=============================================")
+   Tempo(300)
+   Repita
+      Cont <-Cont + 1
+      Escreva("Digite a idade da ", Cont, " º pessoa: ")
+      leia(Idade)
+      Se (Idade >Maior) entao
+         Maior <-Idade
+      FimSe
+      Escreva("Digite o gênero [M/F]: ")
+      leia(Gen)
+
+      Escolha Gen
+      CASO "M"
+         ContM<-ContM+1
+         TotalIdade <- TotalIdade + Idade
+         Media <- TotalIdade / ContM
+
+      CASO "F"
+         Se (Idade < Menor) ou (Menor=0) entao
+            Menor <-Idade
+         FimSe
+
+      FIMESCOLHA
+
+      Escreva("Você deseja continuar [S/N]: ")
+      leia (Resp)
+      Escreval("=============================================")
+
+   Até (Resp = "N")
+
+   Tempo(0)
+
+   EscrevaL("A maior idade lida foi de ", Maior, " Anos." )
+   Escreval("Foram cadastrados ", ContM, " Homens")
+   EscrevaL("A idade da mulher mais jovem é de ", Menor, " Anos.")
+   Escreval("A media de idade entre os homens, é de ", Media," Anos")
+
+
+fimalgoritmo
