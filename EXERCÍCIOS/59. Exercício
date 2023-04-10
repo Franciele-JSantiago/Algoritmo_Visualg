@@ -7,6 +7,9 @@ algoritmo "Exercício 59"
 //b)Quantos homens foram cadastrados
 //c)Qual é a idade da mulher mais jovem
 //d)Qual é a media de idade entre os homens.
+//Autora:Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+
 
 var
    Resp, Gen: Caractere
