@@ -1,0 +1,42 @@
+algoritmo "Exercício 63"
+//PROPOSTA:Crie um programa usando "Repita" que leia vários números
+//A cada laço, pergunte se o usuário quer continuar ou não.
+//No final mostre na tela:
+//a)O somatório entre todos os valores
+//b)Qual foi o menor valor digitado
+//c)A média entre todos os valores
+//d)Quantos valores são pares
+//Autora Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 10/04/2023
+
+var
+   Resp: Caractere
+   Cont, TotalSoma, Menor, Media,QtosPares, Valor: Real
+inicio
+   Escreval("*********************************")
+   Repita
+      Cont <- Cont + 1
+      Escreva(" Digite o valor:")
+      leia(valor)
+      Escreva("Deseja continuar? [S/N]")
+      leia(Resp)
+      Escreval("*********************************")
+      TotalSoma <- TotalSoma +Valor
+      Media <- TotalSoma / Cont
+      Se (Valor < Menor) ou (Menor = 0) entao
+         Menor <- valor
+      FimSe
+      Se (Valor % 2 = 0)entao
+         QtosPares <- Cont
+      FimSe
+
+   Ate(Resp = "N")
+
+
+   Escreval("O somatório entre todos os valores é de: ", TotalSoma:3:2)
+   Escreval("O menor valor digitado foi: ", Menor:3:2)
+   Escreval("A média entre todos os valores é ", Media:3:2)
+   Escreval("São pares ", QtosPares:3:2, " valores")
+   Escreval("*********************************")
+fimalgoritmo
