@@ -1,0 +1,40 @@
+algoritmo "Exercicio 62"
+//PROPOSTA:Faça um programa usando a estrutura "Faça enquanto" que leia a idade de várias pessoas.
+//A cada laço, você deverá perguntar se o usuário deseja continuar.
+//Quando o usuário decidir parar, mostre na tela:
+//a)Quantas idades foram digitadas.
+//b)Qual é a média entre as idades digitadas
+//c)Quantas pessoas tem 21 anos ou mais.
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:10/04/2023
+var
+   Idade, TotalIdade, Mais20, Cont: Inteiro
+   Resp: Caractere
+   Media: Real
+
+inicio
+   Escreval("|==== CALCULADORA ====|")
+   TEMPO (100)
+   Repita
+      Escreva("Digite sua idade:")
+      leia(Idade)
+      Escreva("Deseja continuar [S/N]?")
+      leia(Resp)
+      Escreval("========================")
+      Cont <- Cont +1
+      TotalIdade <- TotalIdade + Idade
+      Media <- TotalIdade / Cont
+      Se (Idade >=21) entao
+         Mais20 <- Mais20 + 1
+      FimSe
+
+   Ate (Resp = "N")
+   TEMPO(0)
+
+
+   Escreval("Foram digitadas" ,Cont, " Idades.")
+   Escreval("A média entre as idades digitadas é de " ,Media:3:2, " Anos.")
+   Escreval("Tem 21 anos ou mais, um total de ", Mais20, " Pessoas.")
+
+fimalgoritmo
