@@ -8,59 +8,62 @@ algoritmo "Exercício 60"
 //c)A média de idade do grupo
 //d)Quantos homens tem mais de 30 anos
 //e)Quantas mulheres tem menos de 18 anos
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:10/04/2023
 
 var
-Resp, Esc, Nome, MaisVelho, MaisNova: Caractere
-Cont, Idade, Maior, Menor,Soma,Menos18, Mais30: Inteiro
-Media: Real
+   Resp, Esc, Nome, MaisVelho, MaisNova: Caractere
+   Cont, Idade, Maior, Menor,Soma,Menos18, Mais30: Inteiro
+   Media: Real
 
 inicio
-Escreval("=============================================")
-Escreval("           PROGRAMA DE PESQUISA              ")
-Escreval("=============================================")
-Escreval("     Digite as informações solicitadas.      ")
-Escreval("=============================================")
-TEMPO(300)
-     Repita
-     Cont <-Cont + 1
-     Escreva("Digite o ", cont, " º nome: ")
-     leia(Nome)
-     Escreva("Digite a idade: ")
-     leia(Idade)
-     Escreva("Digite o gênero [M/F]: ")
-     leia(Esc)
-     Escreva("Você deseja continuar [S/N]: ")
-     leia (Resp)
-     Se (Idade > Maior)entao
-     Maior <- iDADE
-     MaisVelho<-Nome
-     FimSe
-     Soma <- soma + Idade
-     Media <- Soma / cont
-     Escolha Esc
-     Caso "F"
-     Se (Idade < Menor)ou (Menor = 0)entao
-     Menor<-Idade
-     MaisNova <- Nome
-        Se (Idade < 18)entao
-        Menos18 <-Menos18 + 1
+   Escreval("=============================================")
+   Escreval("           PROGRAMA DE PESQUISA              ")
+   Escreval("=============================================")
+   Escreval("     Digite as informações solicitadas.      ")
+   Escreval("=============================================")
+   TEMPO(100)
+   Repita
+      Cont <-Cont + 1
+      Escreva("Digite o ", cont, " º nome: ")
+      leia(Nome)
+      Escreva("Digite a idade: ")
+      leia(Idade)
+      Escreva("Digite o gênero [M/F]: ")
+      leia(Esc)
+      Escreva("Você deseja continuar [S/N]: ")
+      leia (Resp)
+      Se (Idade > Maior)entao
+         Maior <- iDADE
+         MaisVelho<-Nome
       FimSe
-      FimSe
+      Soma <- soma + Idade
+      Media <- Soma / cont
+      Escolha Esc
+      Caso "F"
+         Se (Idade < Menor)ou (Menor = 0)entao
+            Menor<-Idade
+            MaisNova <- Nome
+            Se (Idade < 18)entao
+               Menos18 <-Menos18 + 1
+            FimSe
+         FimSe
       Caso "M"
-      Se (Idade >30)entao
-      Mais30 <-Mais30+1
-      FimSe
+         Se (Idade >30)entao
+            Mais30 <-Mais30+1
+         FimSe
       FimEscolha
 
-Escreval("=============================================")
-Até (Resp = "N")
-TEMPO(0)
+      Escreval("=============================================")
+   Até (Resp = "N")
+   TEMPO(0)
 
-Escreval("O Nome da pessoa mais velha é ",MaisVelho,"." )
-Escreval("O Nome da mulher mais jovem é ", MaisNova,".")
-Escreval("A Média de idade do grupo é de ", Media," Anos.")
-Escreval("O Total de homens que tem mais de 30 anos é" , Mais30,".")
-Escreval("O Total de mulheres que tem menos de 18 anos é " , Menos18,".")
+   Escreval("O Nome da pessoa mais velha é ",MaisVelho,"." )
+   Escreval("O Nome da mulher mais jovem é ", MaisNova,".")
+   Escreval("A Média de idade do grupo é de ", Media," Anos.")
+   Escreval("O Total de homens que tem mais de 30 anos é" , Mais30,".")
+   Escreval("O Total de mulheres que tem menos de 18 anos é " , Menos18,".")
 
 
 fimalgoritmo
