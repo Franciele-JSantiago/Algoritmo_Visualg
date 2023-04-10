@@ -28,7 +28,7 @@ inicio
          Menor <- valor
       FimSe
       Se (Valor % 2 = 0)entao
-         QtosPares <- Cont
+         QtosPares <- QtosPares + 1
       FimSe
 
    Ate(Resp = "N")
