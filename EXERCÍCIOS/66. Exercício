@@ -1,0 +1,23 @@
+algoritmo "Exercício 66"
+
+//PROPOSTA:Escreva um programa que leia um número qualquer e mostre a tabuada desse número,
+//usando a estrutura "para".
+//Ex: Digite um valor; 5
+//5 x 1 = 5
+//5 x 2 = 10
+//5 x 3 = 15...
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 12/04/2023
+
+var
+   Cont, Tab, V: Inteiro
+inicio
+Escreval("Vamos estudar a tabuada?")
+   Escreva("Digite um valor: ")
+   leia(V)
+   Para Cont<- 1 ate 10  faca
+      Tab <- V * Cont
+      Escreval(V," x ", cont, " =", Tab)
+   FimPara
+fimalgoritmo
