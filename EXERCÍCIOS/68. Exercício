@@ -1,0 +1,47 @@
+algoritmo "EXERCÍCIO 68"
+
+//PROPOSTA: Crie um programa que leia sexo e peso de 8 pessoas, usando a estrutura"para".
+//No final, mostre na tela:
+//a)Quantas mulheres foram cadastradas.
+//b)Quantos homens pesam mais de 100Kg
+//c)A média de peso entre as mulheres
+//d)O maior peso entre os homens
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 12/04/2023
+
+var
+   Cont,FTotal, Tot100: Inteiro
+   Peso, Media, mAIOR ,MaiorP, Soma: Real
+   Sexo: Caractere
+inicio
+   Escreval("       DIGITE AS INFORMAÇÕES SOLICITADAS      ")
+   Escreval("==============================================")
+   Para cont<- 1 ate 6 faca
+      Escreva("Digite o peso da ", Cont, " º pessoa: ")
+      leia(peso)
+      Escreva("Escolha o gênero da pessoa [M/F]:")
+      leia(Sexo)
+      Escolha Sexo
+         Caso "M"
+           Se (Peso >100)entao
+             Tot100<-Tot100 +1
+             Se (Peso > Maior)entao
+             Maior <-Peso
+             mAIORP <-mAIOR
+             FimSe
+           FimSe
+        Caso "F"
+           FTotal <- Ftotal +1
+           Soma <- Soma + Peso
+           Media<- Soma / FTotal
+      FimEscolha
+
+   FimPara
+Escreval("==============================================")
+Escreval("O total de mulheres cadastradas foi ", FTotal)
+Escreval("O total de homens que pesam mais de 100Kg é :", Tot100)
+Escreval("A média de peso entre as mulheres é :", Media)
+Escreval("O maior peso entre os homens foi :", MaiorP)
+Escreval("==============================================")
+fimalgoritmo
