@@ -1,0 +1,22 @@
+algoritmo "EXERCÍCIO 67"
+
+//PROPOSTA:Faça um progrma usando a estrutura "para" que leia um número inteiro positivo
+//e mostre na tela uma contagem de 0 até o valor digitado:
+//EX: Digite um valor: 9
+//Contagem:0,1,2,3,4,5,6,7,8,9,Fim!
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:12/04/2023
+var
+   Cont, N: Inteiro
+inicio
+   Escreva("Digite um número inteiro: ")
+   leia (N)
+   Escreva("Contagem:")
+   Para Cont<- 0 ate N faca
+      Escreva(Cont, ",")
+   FimPara
+   Escreva(" Fim!")
+
+
+fimalgoritmo
