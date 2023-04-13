@@ -1,0 +1,29 @@
+algoritmo "Exercício 69 - Desafio"
+
+//PROPOSTA:Desenvolva um programa que leia o primeiro termo e a razão de uma PA(Progressão Aritmética).
+//Mostrando na tela os 10 primeiros elementos da PA e a soma entre todos os valores da sequeência.
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:13/04/2023
+
+var
+   Cont, T1, R, Prox, Soma,SomaTot: Inteiro
+inicio
+
+   Escreva ("Digite o primeiro termo da PA: ")
+   leia (T1)
+   Escreva ("Agora digite a razão da PA: ")
+   leia (R)
+   EscrevaL("=====================================================")
+      Para Cont<- 1 ate 10  faca
+      Prox<-T1+R
+      T1 <-prox
+      Soma<-Soma + Prox
+      Escreva(Prox)
+   FimPara
+   Escreval(".")
+   EscrevaL("=====================================================")
+   SomaTot <- Soma
+   Escreval (" A soma entre todos os elementos da PA é ",SomaTot )
+   Escreval("=====================================================")
+fimalgoritmo
