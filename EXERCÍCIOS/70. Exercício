@@ -1,0 +1,24 @@
+algoritmo "EXERCÍCIO 70 - Desafio"
+
+//PROPOSTA:Faça um programa que mostre os 10 primeiros elementos da sequência de Fibonacci.
+// 1 1 2 3 5 8 13 21 ...
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:13/04/2023
+var
+   Cont, V1, V2, V3: Inteiro
+
+inicio
+   V1<-1
+   Escreva(V1)
+   V2<-1
+   Escreva(V2)
+   Para cont<-3 ate 10 faca
+      V3<- V1 + V2
+      Escreva(V3)
+      V1<-V2
+      V2<-V3
+
+   FimPara
+
+fimalgoritmo
