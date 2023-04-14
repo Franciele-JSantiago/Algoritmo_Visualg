@@ -11,19 +11,13 @@ algoritmo "EXERCICIO 87"
 //Data: 14/04/2023
 
 var
-   Frase: Caractere
-Procedimento AprendendoPortugol( Frase:Caractere)
+   F: Caractere
+   Procedimento Frase()
 inicio
    Escreval("+------++++++------+")
    Escreval(" Aprendendo Portugol")
    Escreval("+------++++++------+")
 FimProcedimento
-
-
 inicio
-
-
-   AprendendoPortugol(Frase)
-
-
-  fimalgoritmo
+   Frase()
+fimalgoritmo
