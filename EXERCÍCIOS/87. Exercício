@@ -1,0 +1,29 @@
+algoritmo "EXERCICIO 87"
+
+//PROPOSTA:Crie um programa que melhore o procedimento gerador() da questão anterior
+//para que mostre uma mensagem personalizada, passada como parâmetro.
+//Ex:Ao chamar Gerador("AprendendoPortugol") aparece:
+// +------++++++------+
+//Aprendendo Portugol
+//+------++++++------+
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 14/04/2023
+
+var
+   Frase: Caractere
+Procedimento AprendendoPortugol( Frase:Caractere)
+inicio
+   Escreval("+------++++++------+")
+   Escreval(" Aprendendo Portugol")
+   Escreval("+------++++++------+")
+FimProcedimento
+
+
+inicio
+
+
+   AprendendoPortugol(Frase)
+
+
+  fimalgoritmo
