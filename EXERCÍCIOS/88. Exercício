@@ -1,0 +1,38 @@
+algoritmo "EXERCICIO 88"
+
+//PROPOSTA:Crie um programa que melhore o procedimento gerador() da questão anterior
+//para que mostre uma mensagem repetida
+//Ex:Ao chamar Gerador("AprendendoPortugol",4) aparece:
+// +------++++++------+
+//Aprendendo Portugol
+//Aprendendo Portugol
+//Aprendendo Portugol
+//Aprendendo Portugol
+//+------++++++------+
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 14/04/2023
+
+var
+   cont:Inteiro
+   
+Procedimento Linhas()
+inicio
+   Escreval("+--------++++++--------+")
+FimProcedimento
+
+Procedimento Gerador(msg: Caractere; qtd: Inteiro)
+inicio
+para cont<-  1 ate qtd faca
+      Escreval(" Aprendendo Portugol ")
+   fimpara
+FimProcedimento
+
+inicio
+   Linhas()
+   gerador("msg",4)
+   Linhas()
+   gerador("msg",2)
+   linhas()
+
+fimalgoritmo
