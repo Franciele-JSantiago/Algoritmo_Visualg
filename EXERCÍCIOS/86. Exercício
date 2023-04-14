@@ -1,0 +1,37 @@
+algoritmo "EXERCÍCIO 86"
+//PROPOSTA:Crie um programa que tenha um procedimento gerador() que, quando chamado, mostre
+//a mensagem "Olá, Mundo!", com algum componente visual (linhas).
+//Ex: ao chamar o gerador() aparece
+//+------++++++------+"
+//    Olá, Mundo!
+//+------++++++------+
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data? 14/04/2023
+
+
+var
+Ola: Caractere
+Procedimento Gerador()
+inicio
+Escreval("+------++++++------+")
+Escreval("    Olá, Mundo!     ")
+Escreval("+------++++++------+")
+FimProcedimento
+Procedimento Gerador2()
+inicio
+Escreval("+------++++++------+")
+Escreval("        Olá!        ")
+Escreval("+------++++++------+")
+FimProcedimento
+
+inicio
+
+Escreval("Sabe o que eu vou te dizer?")
+Gerador()
+Escreval("E o que você poderia me responder?")
+Gerador2()
+
+
+
+fimalgoritmo
