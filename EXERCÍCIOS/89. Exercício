@@ -1,0 +1,53 @@
+Algoritmo "Exercício 89"
+
+//PROPOSTA:Crie um programa que melhore o procedimento gerador() daquestão anterior
+//para que o programador possa escolher uma entre as três bordas
+//+-------=======-------+ Borda1
+//~~~~~~~:::::::~~~~~~~~  Borda2
+//<<<<<<<------->>>>>>>   Borda3
+//Ex: Uma chamada válida seria Gerador("Portugol Studio",3,2)
+// ~~~~~~~:::::::~~~~~~~~
+//    Portugol Studio
+//    Portugol Studio
+//    Portugol Studio
+// ~~~~~~~:::::::~~~~~~~~
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:15/04/2023
+
+const
+   BORDA1 = 1
+   BORDA2 = 2
+   BORDA3 = 3
+
+var
+   contador:inteiro
+   Msg:Caractere
+
+procedimento borda(borda_tipo:inteiro)
+inicio
+   escolha (borda_tipo)
+   caso BORDA1
+      escreval("+-------=======------+")
+
+   caso BORDA2
+      escreval("~~~~~~~~:::::::~~~~~~~")
+
+   caso BORDA3
+      escreval("<<<<<<<<------->>>>>>>")
+   fimEscolha
+fimProcedimento
+
+procedimento gerador(msg:caractere; repeticao, borda_tipo:inteiro)
+
+inicio
+   borda(borda_tipo)
+   para contador de 1 ate repeticao faca
+      escreval("Portugol Studio")
+   fimPara
+   borda(borda_tipo)
+fimProcedimento
+
+inicio
+   gerador("Portugol Studio", 3, 2)
+fimAlgoritmo
