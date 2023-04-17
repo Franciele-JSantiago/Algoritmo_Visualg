@@ -1,0 +1,25 @@
+algoritmo "Exercício 90"
+
+//PROPOSTA:Desenvolva um algoritmo que leia dois valores pelo teclado
+//e passe esses valores para um somador() que calcule e mostre a soma entre eles
+//Autora:Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:17/04/2023
+var
+   X,Y: Inteiro
+
+
+Procedimento Soma(V1, V2: Inteiro)
+inicio
+   Escreva("A soma vale", V1 + V2)
+FimProcedimento
+
+inicio
+   Escreva("Digite o 1° valor: ")
+   leia(x)
+   Escreva("Digite o 2º valor: ")
+   leia(y)
+
+   SOMA(x,y)
+
+fimalgoritmo
