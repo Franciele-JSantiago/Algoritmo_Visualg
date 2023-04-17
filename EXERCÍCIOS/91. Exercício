@@ -1,0 +1,34 @@
+algoritmo "Exercício 91"
+
+//PROPOSTA:Desenvolva um algoritmo que leia dois valores pelo teclado
+//e passe esses valores para um procedimento Maior() que vai verificar qual deles é meior.
+//mostre na tela.
+//caso os dois sejam iguais, mostre uma mensagem informando essa característica.
+//Autora:Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:17/04/2023
+var
+   A,B :Inteiro
+
+Procedimento Maior (V1,V2 :Inteiro)
+inicio
+   Se (V1 > V2) entao
+      Escreva("O Maior valor é ", v1)
+   senao
+      se (V2 > V1)entao
+         Escreva("O Maior valor é ", v2)
+      senao
+         se (V1 = V2)entao
+            Escreval("Os dois valores são iguais.")
+         FimSe
+      FimSe
+   FimSe
+FimProcedimento
+inicio
+   Escreva("Digite o 1° Valor: ")
+   leia(A)
+   Escreva("Digite o 2º Valor: ")
+   leia (B)
+   Maior(A,B)
+
+fimalgoritmo
