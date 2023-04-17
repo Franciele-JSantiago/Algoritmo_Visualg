@@ -1,0 +1,30 @@
+algoritmo "EXERCÍCIO 92"
+
+//PROPOSTA:Crie uma lógica que leia um numero inteiro,
+//e passe para um procedimento ParOuImpar()
+//que vai verificar e mostrar na tela, se o valor passado é Par Ou Impar
+//Autora:Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:17/04/2023
+var
+   N: Inteiro
+
+Procedimento ParOuImpar(Num:Inteiro)
+inicio
+
+   Se (Num % 2 = 0)entao
+      Escreval(Num, " é um número PAR")
+   senao
+      escreval(Num, " é um número IMPAR")
+   FimSe
+
+FimProcedimento
+
+inicio
+   Escreval("===============================================")
+   Escreva("Digite o número que quer verificar: ")
+   Leia(N)
+   Escreval("===============================================")
+   ParOuImpar(N)
+   Escreval("===============================================")
+fimalgoritmo
