@@ -1,0 +1,39 @@
+algoritmo "Exercício 94 Desafio"
+//PROPOSTA:Desenvolva um aplicativo que tenha um procedimento chamado Fibonacci()
+//que recebe um único valor inteiro como parâmetro
+//indicando quantos termos de sequência serão mostrados na tela.
+//O seu procedimento deve receber esse valor e mostrar a quantidade de elementos solicitados.
+//Obs: Use os exercícios 70 e 75 para te ajudar na solução.
+//Ex:
+//Fibonacci(5) vai gerar 1>> 1>> 2>> 3>> 5>> Fim.
+//Fibonacci(9) vai gerar 1>> 1>> 2>> 3>> 5>> 8>> 13>> 21>> 34>> Fim
+//Autora:Franciele Juchem Santiago
+//Prof:Gustavo Guanabara
+//Data:18/04/2023
+var
+  Seq,F1,F2,F3,cont:Inteiro
+  
+procedimento Fibonacci(N:Inteiro)
+inicio
+   F1 <-1
+   Escreva(F1," >> ")
+   F2 <- 1
+   Escreva(F2," >> ")
+   Para cont <- 3 ate Seq faca
+      F3 <- F1 + F2
+        Escreva(F3," >> ")
+      F1 <- F2
+      F2 <- F3
+   FimPara
+FimProcedimento
+
+inicio
+
+ Escreval("Vamos fazer a sequência de Finonacci?")
+ Escreva("Digite quantos termos da sequência você gostaria de ver: ")
+ leia(Seq)
+ 
+ Fibonacci(Seq)
+ Escreva(" Fim")
+
+fimalgoritmo
