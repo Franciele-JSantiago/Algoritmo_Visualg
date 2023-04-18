@@ -1,0 +1,37 @@
+algoritmo "Exercício 93"
+
+//PROPOSTA:Faça um programa que tenha um procedimento chamado contador()
+//que recebe três valores como parâmetro:O inicio, o fim e o incremento.
+//o programa principal deve solicitar a digitação desses valores e passá-losao procedimento
+//que vai mostrar a contagem na tela.
+//Ex:Para os valores de inicio (4),, fim (20) e incremento 3 teremos
+//contador (4,20,3)
+//vai mostrar na tela 4 7 10 13 16 19 fim
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:18/04/2023
+var
+   Vi,Vf,Inc, cont: Inteiro
+
+Procedimento Contador (VAR A,B,C,:Inteiro)
+
+inicio
+
+   Para Cont <- A ate B passo C faca
+      Escreva(Cont)
+   FimPara
+FimProcedimento
+
+inicio
+
+   Escreva("Digite o valor inicial: ")
+   leia(Vi)
+   Escreva("Digite o valor final:")
+   leia (Vf)
+   Escreva("Digite o incremento: ")
+   leia (Inc)
+
+   Contador(Vi,Vf,Inc)
+   Escreva(" Fim.")
+
+fimalgoritmo
