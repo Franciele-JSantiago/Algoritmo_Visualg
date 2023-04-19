@@ -1,0 +1,26 @@
+algoritmo "Exercício 96"
+//PROPOSTA:Crie um programa que tenha uma funcão média()
+//que vai receber as duas notas de um aluno e retornar a sua média para o programa principal.
+//Autora:Franciele Juchem Santiago
+//Prof:Gustavo Guanabara
+//Data:19/04/2023
+var
+   N1,N2:Inteiro
+   M:Real
+
+Funcao Media (X,Y: Inteiro):Real
+inicio
+
+   Retorne (X + Y)/2
+FimFuncao
+
+inicio
+
+   Escreva("Digite a 1° nota do aluno: ")
+   leia(N1)
+   Escreva("Digite a 2° nota do aluno: ")
+   leia(N2)
+   M<- Media (N1,N2)
+   Escreval("A média entre a nota ",N1," e a nota ",N2," é de : ",M)
+
+fimalgoritmo
