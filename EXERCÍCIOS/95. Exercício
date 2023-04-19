@@ -1,0 +1,26 @@
+algoritmo "Exercício 95"
+
+//PROPOSTA:Refaça o exercício 90, só que agora em forma de funcção somador(), que vaireceber dois parãmtros
+//e vai retornar o resultado da soma entre eles para o programa principal.
+//Autora:Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:19/04/2023
+var
+   X,Y,S: Inteiro
+
+
+funcao Soma(V1, V2: Inteiro):Inteiro
+inicio
+   Retorne X + Y
+FimFuncao
+
+inicio
+   Escreva("Digite o 1° valor: ")
+   leia(x)
+   Escreva("Digite o 2º valor: ")
+   leia(y)
+
+   S<-SOMA(x,y)
+   Escreval("A soma entre ", X, " e ", y, " é igual a ", S)
+
+fimalgoritmo
