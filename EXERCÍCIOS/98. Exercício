@@ -1,0 +1,38 @@
+algoritmo "Exercício 98"
+
+//PROPOSTA:Crie um programa que tenha uma função SuperSomador()
+//que vai receber dois números como parâmetro e depois vai retornara soma de todos os valores
+//no intervalo entre os valores recebidos.
+//Ex:
+//SuperSomador(1,6) vai somar 1+2+3+4+5+6 e vai retornar 21
+//SuperSomador (15,19) vai somar 15+16+17+18+19 e vai retornar 85
+//Autora:Franciele Juchem Santiago
+//Prof:Gustavo Guanabara
+//Data:19/04/2023
+var
+   V1,V2,S:Inteiro
+
+Funcao SuperSomador (N1,N2:Inteiro): Inteiro
+var
+   Soma, Cont:Inteiro
+inicio
+   Soma <-0
+   Cont <-0
+   Para cont <- N1 ate N2 Faca
+      Soma <- Soma +Cont
+   FimPara
+   Retorne Soma
+FimFuncao
+
+
+inicio
+
+   Escreva("Digite o 1° número: ")
+   leia(V1)
+   Escreva("Digite o 2º número: ")
+   leia(V2)
+   S <- SuperSomador(V1,V2)
+   Escreval("A soma entre todos os valores de", V1, " a ", V2, " é igual a ", S)
+
+
+fimalgoritmo
