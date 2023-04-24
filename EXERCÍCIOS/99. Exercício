@@ -1,0 +1,29 @@
+algoritmo "Exercício 99"
+
+//PROPOSTA:Faça um programa que possua uma função chamada Potencia()
+//que vai receber dois parâmetros numéricos (base e expoente)
+//e vai calcular o resultado da exponenciação.
+//Ex: Potencia(5,2) vai calcular 5² = 25
+//Autora: Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:24/04/2023
+
+var
+   V1,V2, P: Real
+
+Funcao Potencia ( N1, N2: Real): Real
+   Retorne N1 ^ N2
+
+FimFuncao
+inicio
+
+   Escreval("CÁLCULO DE POTÊNCIA")
+   Escreva("Digite o 1º valor: ")
+   leia (V1)
+   Escreva("Digite o 2º valor: ")
+   leia (V2)
+   P <- Potencia (V1,V2)
+   Escreval("A potência de", V1, " elevado a ", V2, " é igual a ", P)
+
+
+fimalgoritmo
