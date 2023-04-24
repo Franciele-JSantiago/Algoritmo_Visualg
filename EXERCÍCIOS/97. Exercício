@@ -1,0 +1,44 @@
+algoritmo "Exercício 97"
+//PROPOSTA:Refaça o exercício 91, só que agora em forma de função Maior()
+//mas faça uma adaptação que vai receber 3 números como parâmetro
+//e vai retornar qual foi o maior entre eles.
+//PROPOSTA:Desenvolva um algoritmo que leia dois valores pelo teclado
+//e passe esses valores para um procedimento Maior() que vai verificar qual deles é meior.
+//mostre na tela.
+//caso os dois sejam iguais, mostre uma mensagem informando essa característica.
+//Autora:Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:17/04/2023
+var
+   A,B,C,M :Inteiro
+
+Funcao Maior (V1,V2,V3 :Inteiro):Inteiro
+inicio
+   Se (V1 > V2) entao
+      Escreva("O Maior valor é ", v1)
+   senao
+      se (V2 > V3)entao
+         Escreva("O Maior valor é ", v2)
+      senao
+         se (V3 > V1)entao
+            Escreva("O Maior valor é ", v3)
+         senao
+            se (V1 = V2)e(V2 = V3)entao
+               Escreval("Os Três valores são iguais.")
+            FimSe
+         FimSe
+      FimSe
+   FimSe
+   Retorne(M)
+FimFuncao
+inicio
+   Escreva("Digite o 1° Valor: ")
+   leia(A)
+   Escreva("Digite o 2º Valor: ")
+   leia (B)
+   Escreva("Digite o 3° Valor: ")
+   leia(C)
+   M <- Maior(A,B,C)
+
+
+fimalgoritmo
