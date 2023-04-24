@@ -1,0 +1,46 @@
+algoritmo "Exercício 100"
+//PROPOSTA: Melhore o exerício 96, criando além da função Média()
+//uma outra função chamada Situação()
+//que vai retornar para o programa principal se o aluno está
+//APROVADO, em RECUPERAÇÃO ou REPROVADO.
+//Essa nova função vai receber como parâmetro o resultado retornado pela função média().
+
+//Autora:Franciele Juchem Santiago
+//Prof:Gustavo Guanabara
+//Data:24/04/2023
+var
+   N1,N2 :Inteiro
+   M:Real
+   S: Caractere
+
+Funcao Media (X,Y: Inteiro):Real
+inicio
+
+   Retorne (X + Y)/2
+FimFuncao
+
+Funcao Situacao (M: Real):Caractere
+inicio
+   Se (M >= 7) entao
+      Retorne "APROVADO"
+   senao
+      Se (M < 7) e (M >= 5) entao
+         Retorne " em RECUPERAÇÃO"
+      Senao
+         Retorne "REPROVADO"
+      FimSe
+   FimSe
+FimFuncao
+
+inicio
+
+   Escreva("Digite a 1° nota do aluno: ")
+   leia(N1)
+   Escreva("Digite a 2° nota do aluno: ")
+   leia(N2)
+   M<- Media (N1,N2)
+   S <- Situacao (M: Real)
+   Escreval("A média entre a nota ",N1," e a nota ",N2," é de : ",M, " sendo assim o aluno está ", S)
+
+
+fimalgoritmo
