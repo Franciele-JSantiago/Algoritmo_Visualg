@@ -1,0 +1,29 @@
+algoritmo "75. Exercício"
+//PROPOSTA: Crie um programa que preencha automaticamente
+//usando lógica e não atribuição direta
+//um vetor númérico com 15 posições
+//com os primeiros elementos da sequencia de fibonacci
+//1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
+//0 1 2 3 4 5 6 7   8  9  10 11  12  13  14  15
+//Autora:Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:02/05/2023
+
+var
+  V:Vetor[0..15] de Inteiro
+  C:Inteiro
+
+inicio
+
+   V[0]<-1
+   Escreva(V[0])
+   V[1]<-1
+   Escreva(V[1])
+      Para C<-2 ate 15 faca
+      V[C] <- V[0]+V[1]
+      Escreva(V[C])
+      V[0]<-V[1]
+      V[1]<-V[C]
+   FimPara
+
+fimalgoritmo
