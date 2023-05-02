@@ -1,0 +1,25 @@
+algoritmo "72 Exercício"
+//PROPOSTA: Crie um programa que preencha automaticamente
+//usando lógica e não apenas atribuição direta
+//Um vetor numérico com 10 posições, conforme abaixo
+//5 10 15 20 25 30 35 40 45 50
+//0 1  2  3  4  5  6  7  8  9
+//Autora:Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:02/05/2023
+
+var
+   V:Vetor[0..9] de Inteiro
+   C, N:Inteiro
+
+inicio
+
+   Para c <- 0 ate  9 faca
+      N <- N +5
+      V[c] <- N
+      Escreva(N)
+   FimPara
+
+
+
+fimalgoritmo
