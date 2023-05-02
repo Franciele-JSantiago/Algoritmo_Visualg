@@ -1,0 +1,23 @@
+algoritmo "73 Exercício"
+//PROPOSTA: Crie um algoritmo que preencha automaticamente
+//Usando lógica e não atribuição direta
+//um vetor numérico com 10 posições, conforme abaixo:
+//9 8 7 6 5 4 3 2 1 0
+//Autora: Francielçe Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data: 02/05/2023
+
+var
+   V:Vetor[0..9] de inteiro
+   c, n  :Inteiro
+
+
+inicio
+   n <- 10
+   para c <- 0 ate 9 faca
+      n <- n-1
+      v[c] <- n
+      escreva(v[c])
+   FimPara
+
+fimalgoritmo
