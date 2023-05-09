@@ -1,0 +1,36 @@
+algoritmo "77 Exercício"
+//PROPOSTA: Faça um programa que leia 7 nomes de pessoas e guarde-os em um vetor
+//No final, mostre a listagem com todos os nomes informados
+//Na ordem inversa aquela que foi informado.
+//Autora:Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:09/05/2023
+var
+   Vet:Vetor[1..7]de Caractere
+   C:Inteiro
+   Nome:Caractere
+
+Procedimento Nome()
+
+inicio
+   Escreva("Digite seu nome: ")
+   leia(Nome)
+
+FimProcedimento
+
+
+inicio
+   C<-0
+   Para C <-1 ate 7 faca
+      Nome()
+      Vet[c] <- nome
+   FimPara
+   Escreval("=========================")
+   Escreval(" LISTA INVERSA DOS NOMES")
+   Escreval("=========================")
+   Para C <-7 ate 1 passo -1 faca
+      Escreval (Vet[c])
+   FimPara
+
+
+fimalgoritmo
