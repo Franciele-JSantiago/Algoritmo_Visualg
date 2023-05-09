@@ -1,0 +1,36 @@
+algoritmo "78 Exercício"
+//PROPOSTA:Escreva um programa que leia 15 números e guarde-os em um vetor.
+//No final,mostre o vetor inteiro na tela
+//Em seguida mostre em que posições foram digitados valores
+//que são multiplos de 10.
+//Autora Franciele Juchem Santiago
+//Prof:Gustavo Guanabara
+//Data:09/05/2023
+var
+   Vet:VETOR[1..5] de Inteiro
+   c, num:Inteiro
+
+
+inicio
+
+   Para c <-1 ate 5 faca
+      Escreva("Digite o ",c:2," Numero: ")
+      leia (num)
+      Vet[c] <- num
+      limpatela
+   FimPara
+
+   Escreval("  LISTAGEM DOS NÚMEROS DIGITADOS")
+   Escreval("------------------------------------")
+   Escreval(" com números multiplos de 10 em [ ]")
+   Escreval("------------------------------------")
+
+   Para c<- 1 ate 5 faca
+      Se (Vet[c] %10 = 0)entao
+         EscrevaL("[",Vet[C],"]")
+      senao
+         EscrevaL(Vet[c]:3)
+      FimSe
+   fimpara
+
+fimalgoritmo
