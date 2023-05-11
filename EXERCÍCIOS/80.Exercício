@@ -1,0 +1,43 @@
+algoritmo "80. Exercício"
+//PROPOSTA: Faça um algoritmo que preencha um vetor de 30 posições
+//com números entre 1 e 15 sorteados pelo computador.
+//Depois disso peça para o usuário digitar um número(chave)
+//e seu programa deve mostrar em que posições essa chave foi encontrada.
+//Mostre também quantas vezes a chave foi sorteada.
+//Autora:Franciele Juchem Santiago
+//Prof: Gustavo Guanabara
+//Data:11/05/2023
+var
+   Vet:VETOR[1..30]de Inteiro
+   Posi: vetor[1..30] de inteiro
+   C,num,TotNum:Inteiro
+inicio
+   tempo(100)
+   Para c <- 1 ate 30 faca
+      vet[C]<-Randi(15)
+      Posi[C]<- C
+      Escreval(vet[c])
+   FimPara
+
+      Escreval("==============================================")
+   Escreva(" ESCOLHA UM NÚMERO: ")
+   Leia (Num)
+   Escreval("==============================================")
+
+   Escreval("O Número ",Num," saiu nas seguintes posições:")
+   Para c <- 1 ate 30 faca
+      Se (Num = Vet[c])entao
+         TotNum <-TotNum+1
+         escreva(posi[c]:4)
+      fimse
+   fimpara
+   Escreval()
+   Escreval("Esse número aparece ",TotNum, " Vezes")
+   Escreval("==============================================")
+
+
+
+
+
+fimalgoritmo
+
