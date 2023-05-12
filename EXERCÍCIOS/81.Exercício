@@ -1,0 +1,50 @@
+algoritmo "81 Exercício"
+//PROPOSTA:Cria um programa que leia a idade de 8 pessoas e guarde-as em um vetor
+//No final mostre:
+//a)Qual a média de idade das pessoas cadastradas
+//b)Em quais posições temos pessoas com mais de 25 anos
+//c)Qual foi a maior idade digitada(pode haver repetições)
+//d)Em qual posição digitamos a maior idade
+//Autora:Franciele Juchem Santiago
+//Prof:Gustavo Guanabara
+//Data:12/05/2023
+var
+   Vet:Vetor[1..8] de Inteiro
+   Posi:Vetor[1..8] de Inteiro
+   Mais25:Vetor[1..8] de Inteiro
+   C, Idade,MaIdade, PosiMaIdade, SomaIdade:Inteiro
+   MedIdade:Real
+
+inicio
+   SomaIdade<-0
+   Para c <-  1 ate 8 faca
+      Escreva("Digite a ",c," idade: ")
+      leia(Idade)
+         SomaIdade<-SomaIdade + Idade
+         Vet[c]<- Idade
+         Posi[c]<-c
+            se (Vet[C] > 25) entao
+                Mais25[C] <- Posi[C]
+            Fimse
+             se (Vet[C] > MaIdade) entao
+                MaIdade <- Vet[C]
+                PosiMaIdade <- Posi[C]
+             Fimse
+      
+      FimPara
+Escreval("============================================================")
+      MedIdade <- SomaIdade / 8
+Escreval ("A média das idades cadastradas é ", MedIdade:5:2)
+Escreval ("A pessoas com mais de 25 anos estão nas seguintes posições:")
+    para C <- 1 ate 8 faca
+        se (Mais25[C] > 0) entao
+           escreval("Posição",Mais25[C])
+        Fimse
+    Fimpara
+Escreval()
+Escreval ("A maior idade digitada foi ", MaIdade)
+Escreval ("A maior idade foi digitada na posição: ", PosiMaIdade)
+Escreval("============================================================")
+
+fimalgoritmo
+
