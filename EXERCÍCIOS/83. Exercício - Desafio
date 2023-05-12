@@ -1,0 +1,47 @@
+algoritmo "83 Exercício - Desafio"
+//PROPOSTA: Crie uma lógica que preencha um vetor de 20 posições
+//com números aleatórios entre 0 e 99 gerados pelo computador.
+//Logo em seguida, mostre os números gerados
+// coloque o vetor em ordem crescente, mostrandp no final os valores ordenados
+//Autora:Franciele Juchem Santiago
+//Prof:Gustavo Guanabara
+//Data:12/05/2023
+var
+   Vet:Vetor[1..20] de Inteiro
+   c, i,  aux:Inteiro
+
+inicio
+tempo(200)
+   Escreval("---------------------------------------------------------")
+   Escreval(" Vamos sortear 20 números de 1 á 99")
+   Escreval("Sorteando...")
+   Escreval("             ........")
+   Escreval("                          ..........")
+   Escreval("---------------------------------------------------------")
+   Tempo(50)
+   Para c<-1 ate 20 faca
+      Vet[c]<-Randi(99)
+      Escreva(Vet[c])
+   FimPara
+   Escreval()
+   Escreval("---------------------------------------------------------")
+   Escreval("      Arrumando  os números em ordem CRESCENTE  ")
+   Escreval("---------------------------------------------------------")
+   Tempo(20)
+   Para c<- 1 ate 19 faca
+      Para i<- c + 1 ate 20 faca
+         Se (Vet[c] > Vet[i])entao
+            aux <- Vet[c]
+            Vet[c] <- Vet[i]
+            Vet[i] <- aux
+
+         FimSe
+      FimPara
+   FimPara
+   Tempo(50)
+   Para c<- 1 ate 20 faca
+      Escreva(Vet[c])
+   FimPara
+   
+
+fimalgoritmo
